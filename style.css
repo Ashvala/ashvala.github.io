@@ -1,0 +1,74 @@
+*{
+	margin: 0px; 
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	background: white;
+
+}
+.main{
+	width: 100%;
+	margin: 0px auto;
+	background: white; 
+}
+h1{
+	font-family: "Oswald";
+	font-size: 5em;
+	margin-left: 20%;
+}	
+
+.intro p{
+	margin-bottom: 10px;
+	margin-top: 10px; 
+	margin-left: 20%;
+	line-height: 1.3em;
+	font-family: "Roboto";
+	font-size: 1.3em;
+}
+
+.links{
+	margin-left: 20%;
+	margin-top: 20px;
+}
+
+.box{
+	width: 50%;	
+	background: #333;
+	color: white;	
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+.box_title{
+	font-family: Oswald;
+	margin-bottom: 10px;
+	font-size: 1.4em;
+	color: #0CA7DB;
+	background: #222;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px; 
+
+}
+
+.box_desc{
+	font-family: Roboto;
+	font-weight: 300;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.box_desc p{
+	line-height: 1.5em;
+}
+
+.box_url{
+	font-family: Roboto;
+	font-weight: 300;
+	color: #0CA7DB;
+	text-decoration: none;
+	margin-top: 80px;	
+	padding-left: 10px;
+	padding-bottom: 30px;
+}
