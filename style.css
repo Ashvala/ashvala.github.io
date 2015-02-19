@@ -40,6 +40,12 @@ h1{
 	color: white;	
 	margin-bottom: 30px;
 	padding-bottom: 10px;
+	-webkit-filter: brightness(0.9)
+	padding-right: 10px;
+}
+
+.box:hover{
+    -webkit-filter: brightness(1.0);
 }
 .box_title{
 	font-family: Oswald;
@@ -58,6 +64,7 @@ h1{
 	font-weight: 300;
 	padding-left: 10px;
 	margin-bottom: 10px;
+	padding-right: 10px;
 }
 
 .box_desc p{
