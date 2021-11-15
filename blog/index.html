@@ -18,11 +18,11 @@
 		<link rel="modulepreload" href="/_app/chunks/vendor-f762ad99.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/layout.svelte-5172ddd0.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-a23fcb4b.js">
+		<link rel="modulepreload" href="/_app/pages/blog/index.svelte-a132c589.js">
 		<link rel="modulepreload" href="/_app/chunks/Nav-80b8e7ac.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-28d9e71a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-337295e5.css">
+		<link rel="stylesheet" href="/_app/assets/pages/blog/index.svelte-e9085408.css">
 		<link rel="stylesheet" href="/_app/assets/Nav-d06d5167.css">
 
 		<script type="module">
@@ -40,11 +40,11 @@
 					error: null,
 					nodes: [
 						import("/_app/layout.svelte-5172ddd0.js"),
-						import("/_app/pages/index.svelte-a23fcb4b.js")
+						import("/_app/pages/blog/index.svelte-a132c589.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fblog",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -60,24 +60,23 @@
 
 
 
-<div class="container">
+
+
+<div class="container-sm">
 
 <div><nav class="svelte-1x1v0m6"><h1>Ashvala Vinay </h1>
        <ul class="svelte-1x1v0m6"><li class="svelte-1x1v0m6"><a href="/blog">Blog </a></li>
             <li class="svelte-1x1v0m6"><a href="/portfolio">Portfolio </a></li></ul></nav>
 </div>
-
-    <div class="row"><div class="col"><img alt="Ashvala" src="/me.jpg" class="me_img img-thumbnail"></div>
-    <div class="col"><div class="content svelte-1mo8ffw"><h1 class="svelte-1mo8ffw">Hi, I am Ashvala Vinay </h1>
-        <p class="svelte-1mo8ffw">I am a PhD student at Georgia Tech&#39;s Center for Music Technology. I am currently working with Prof. Grace Leslie and Prof. Alexander Lerch on problems at the intersection of music, expression, machine learning and informatics.  </p> 
-        <p class="svelte-1mo8ffw">I graduated from Berklee College of Music in 2016. Following that, I worked on some personal projects and helped get two startups off the ground with their software engineering work. After that, I got my Masters in Music Technology at GTCMT. </p> 
-        <p class="svelte-1mo8ffw">On this page, I will be sharing my work, and some of my posts where I will discuss music, technology and my progress through the course of my PhD work. </p></div></div></div>
+    
+    <div class="row"><div class="col"><h2 class="svelte-etnavi">Posts </h2>
     <hr>
-    <div class="row"></div></div>
+    <a href="/blog/post1"><div class="portfolio_link svelte-etnavi" data-title="Hello World.">Hello World.</div></a>   
+    <hr></div></div></div>
 
 
 
-			
+			<script type="application/json" data-type="svelte-data" data-url="/blog/blog.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Hello World.\",\"date\":\"2021-09-09T00:00:00.000Z\",\"excerpt\":\"A blog needs to re-start somewhere\"},\"slug\":\"blog\u002Fpost1\"}]"}</script>
 		</div>
 	</body>
 </html>
