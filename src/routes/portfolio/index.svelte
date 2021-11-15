@@ -28,7 +28,7 @@
     <Row>      
     <Col>  
         
-            <h2> Posts </h2>
+            <h2> Portfolio </h2>
             {#each posts as post}
             <a href={`${base}/${post.portfolioslug}`}>
                 <div class="portfolio_link" data-title={post.metadata.title}>{post.metadata.title}</div>  
@@ -63,6 +63,7 @@ p{
 }
 
 h2{
+    font-family: "Iosevka Web";
     margin-bottom: 20px; 
 }
 

@@ -16,6 +16,8 @@
   export let post;
   import { Styles } from 'sveltestrap';
   import { Col, Container, Row } from 'sveltestrap';
+  console.log(post.metadata.Tech);
+  export let tech = post.metadata.Tech;
 </script>
 
 <svelte:head>
@@ -27,7 +29,14 @@
 <Container> 
   <Nav/>
   <Row>      
-    <h1 class="title">{post.metadata.title}</h1>    
+    <h1 class="title">{post.metadata.title}</h1>  
+    <div class="portfolio_tech"> 
+      {#each tech as techItem}
+          <div class="portfolio_meta_tech_item"> 
+            {techItem}
+          </div>
+      {/each}
+    </div>  
     <div class="post_content">
       {@html post.content}
     </div>
@@ -54,4 +63,13 @@
     font-family: "Nunito";
     font-size: 1.1em;
   }
+  .portfolio_meta_tech_item{ 
+    display: inline-block;
+    margin-right: 1em;
+    padding: 6px; 
+    background: #222; 
+    color: white; 
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
 </style>

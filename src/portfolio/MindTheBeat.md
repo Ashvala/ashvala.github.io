@@ -1,6 +1,6 @@
 ---
 layout: portfolio_page
-title: "Mind the Beat"
+title: "Mind the Beat (ICASSP 2021 Paper!)"
 Tech:
 - Python
 - Pytorch

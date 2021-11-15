@@ -8,7 +8,7 @@
 
 <div> 
    <nav> 
-       <h1> Ashvala Vinay </h1>
+       <h1> <a href="/"> Ashvala Vinay </a> </h1>
        <ul> 
            <li> <a href="/blog"> Blog </a> </li>
             <li> <a href="/portfolio"> Portfolio </a> </li>            
@@ -16,7 +16,16 @@
    </nav>
 </div>  
 
-<style lang="scss"> 
+<style> 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #0CA7DB;
+}
 
 nav{
     display: flex;
