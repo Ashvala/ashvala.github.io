@@ -42,7 +42,7 @@ ul{
     display: flex;
     list-style: none;
     align-content: center;
-    height: 100%;
+   
     width: 50%;
     justify-content: center;
 }

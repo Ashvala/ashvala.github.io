@@ -88,15 +88,7 @@ h2{
     color: #333;
 }
 
-.portfolio_meta_tech_item{ 
-    display: inline-block;
-    margin-right: 1em;
-    padding: 6px; 
-    background: #222; 
-    color: white; 
-    border-radius: 5px;
-    margin-bottom: 1em;
-}
+
 
 .portfolio_link:hover{
     cursor:pointer;
