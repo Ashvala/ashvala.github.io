@@ -1,11 +1,11 @@
 ---
 title: Bioreactive Music
 Tech:
-- Swift
-- OSC
-- Csound
-- NodeJS
-- Bluetooth
+  - Swift
+  - OSC
+  - Csound
+  - NodeJS
+  - Bluetooth
 ---
 
 Liquid Science Episode: [https://www.redbull.tv/video/AP-1N7M57S9N2111/musics-future](https://www.redbull.tv/video/AP-1N7M57S9N2111/musics-future)

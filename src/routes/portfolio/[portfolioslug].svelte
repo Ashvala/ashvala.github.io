@@ -1,42 +1,45 @@
 <script context="module">
-  import { base } from '$app/paths';
-  import Nav from '$lib/Nav.svelte';
+  import { base } from "$app/paths";
+  import Nav from "$lib/Nav.svelte";
 
   export async function load({ page, fetch }) {
     const slug = page.params.portfolioslug;
-    const post = await fetch(`${base}/portfolio/${slug}.json`)
-        .then((r) => r.json());
+    const post = await fetch(`${base}/portfolio/${slug}.json`).then((r) =>
+      r.json()
+    );
     return {
-      props: { post }
+      props: { post },
     };
   }
 </script>
 
 <script>
   export let post;
-  import { Styles } from 'sveltestrap';
-  import { Col, Container, Row } from 'sveltestrap';
+  import { Styles } from "sveltestrap";
+  import { Col, Container, Row } from "sveltestrap";
   console.log(post.metadata.Tech);
   export let tech = post.metadata.Tech;
 </script>
 
 <svelte:head>
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css"
+  />
   <title>{post.metadata.title}</title>
 </svelte:head>
-<Styles/>
-<Container> 
-  <Nav/>
-  <Row>      
-    <h1 class="title">{post.metadata.title}</h1>  
-    <div class="portfolio_tech"> 
+<Styles />
+<Container>
+  <Nav />
+  <Row>
+    <h1 class="title">{post.metadata.title}</h1>
+    <div class="portfolio_tech">
       {#each tech as techItem}
-          <div class="portfolio_meta_tech_item"> 
-            {techItem}
-          </div>
+        <div class="portfolio_meta_tech_item">
+          {techItem}
+        </div>
       {/each}
-    </div>  
+    </div>
     <div class="post_content">
       {@html post.content}
     </div>
@@ -44,32 +47,32 @@
 </Container>
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
-  :global(body){ 
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
+  :global(body) {
     font-family: "Iosevka Web";
   }
   h1.title {
     margin-bottom: 10px;
   }
 
-  a{ 
+  a {
     text-decoration: none;
     color: #666;
   }
 
-  .post_content{
+  .post_content {
     margin-top: 1em;
     line-height: 1.5em;
     font-family: "Nunito";
     font-size: 1.1em;
   }
-  .portfolio_meta_tech_item{ 
+  .portfolio_meta_tech_item {
     display: inline-block;
     margin-right: 1em;
-    padding: 6px; 
-    background: #222; 
-    color: white; 
+    padding: 6px;
+    background: #222;
+    color: white;
     border-radius: 5px;
     margin-bottom: 1em;
-}
+  }
 </style>

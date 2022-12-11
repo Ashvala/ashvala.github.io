@@ -2,9 +2,9 @@
 layout: portfolio_page
 title: "Mind the Beat (ICASSP 2021 Paper!)"
 Tech:
-- Python
-- Pytorch
-- Madmom
+  - Python
+  - Pytorch
+  - Madmom
 ---
 
 [Published at ICASSP 2021!](https://ieeexplore.ieee.org/abstract/document/9414245)

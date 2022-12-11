@@ -2,11 +2,11 @@
 layout: portfolio_page
 title: Muse
 Tech:
-- C++
-- C
-- OpenFrameworks
-- Pure data
-- Csound
+  - C++
+  - C
+  - OpenFrameworks
+  - Pure data
+  - Csound
 ---
 
 URL: [http://boulangerlabs.com/muse/](http://boulangerlabs.com/muse/)

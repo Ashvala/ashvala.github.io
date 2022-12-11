@@ -2,10 +2,9 @@
 layout: portfolio_page
 title: Slower
 Tech:
-- Logic Pro
-- EXS24
+  - Logic Pro
+  - EXS24
 ---
-
 
 ---
 
@@ -13,8 +12,7 @@ Tech:
 
 ---
 
-
-**Genre:**  Ambient
+**Genre:** Ambient
 
 **Time:** 9 minutes 57 seconds
 

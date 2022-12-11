@@ -1,8 +1,8 @@
 ---
 layout: portfolio_page
-title:  Three Vs Two
+title: Three Vs Two
 Tech:
-- Csound
+  - Csound
 ---
 
 **Genre:** Generative
@@ -28,7 +28,6 @@ This piece was written for Dr. Richard Boulanger’s Csound class from the Summe
 The code was written in Csound. It does not use any notelist events in the score and relies on schedulers inside of Csound to trigger note events.
 
 ---
-
 
 ### Global Arrays:
 
@@ -59,17 +58,15 @@ This can easily be made much more haiku like - just by setting `del` and `rev's`
 
 ---
 
-
-
 ### The scheduler instrument:
 
 Code:
 
 ```
-instr scheduler		
-	kTrig metro 3		
-	kmetro = metro(3)		
-	ktrig_bass = metro(2)				
+instr scheduler
+	kTrig metro 3
+	kmetro = metro(3)
+	ktrig_bass = metro(2)
 	kmidi_note_t = trandom(kmetro, 0,8)
 	kmidinote = gkarr[int(kmidi_note_t)]
 	kmidinote_bass = gkarrbass[int(kmidi_note_t)]
@@ -88,9 +85,7 @@ endin
 
 ---
 
-
 ### The actual instrument:
-
 
 ```
 instr 1

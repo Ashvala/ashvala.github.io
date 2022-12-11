@@ -21,14 +21,13 @@ PaperSynth is a project that uses Machine Learning and Computer Vision to do sou
 
 The use case I wanted to accomplish with this app was to help my sound design tutoring sessions. Previously, when I was at Berklee as a tutor, I intended to develop tools that would assist in teaching programming and sound design. An initial idea intended to apply online-handwriting recognition and develop an app analogous to Pure Data and Max/MSP for the modern day tablets and phones.
 
-However, a far more interesting use case ended up being able to take photos of these “stacks”  and make them performable on the phone. In a perfect storm of technological advances, machine learning and computer vision became far more ubiquitous with the release of Keras (a binding to Tensorflow) on Python and CoreML/Vision on iOS. The previously sparse resources for these topics became more easily available.
+However, a far more interesting use case ended up being able to take photos of these “stacks” and make them performable on the phone. In a perfect storm of technological advances, machine learning and computer vision became far more ubiquitous with the release of Keras (a binding to Tensorflow) on Python and CoreML/Vision on iOS. The previously sparse resources for these topics became more easily available.
 
 ### How it works:
 
-
 The first component in this project is the handwriting recognition. Handwriting Recognition is done using the Chars74K dataset from University of Surrey. They have two datasets - one of them handles character recognition in outdoor environments with varied typesets and camera optics. The other Chars74k dataset handles text data written with a stylus on a digital tablet for handwriting recognition tasks.
 
-The dataset was converted to a MNIST-style formatted dataset, where the labels and data are encoded as numpy  arrays (numpy is a python library with a direct C interface to facilitate faster calculations and data manipulation). The labels are encoded as One-hot encoded vectors and get represented as a series of 0s and the label itself is encoded as a 1.  Prior to training, the data was augmented to allow for many variations and permutations of the same label and increase the number of viable circumstances under which classification would be possible
+The dataset was converted to a MNIST-style formatted dataset, where the labels and data are encoded as numpy arrays (numpy is a python library with a direct C interface to facilitate faster calculations and data manipulation). The labels are encoded as One-hot encoded vectors and get represented as a series of 0s and the label itself is encoded as a 1. Prior to training, the data was augmented to allow for many variations and permutations of the same label and increase the number of viable circumstances under which classification would be possible
 
 The dataset was trained with a convolutional neural net. The design for the neural net is analogous to a network that would be used for an MNIST training task. The network achieved a score of 89.74% over 80 epochs (iterations over the dataset and its various augmentations).
 Following training, the dataset is converted to Apple’s CoreML format. CoreML automatically generates the code necessary for using the model one has trained in an app and exposes Swift/Objective-C APIs for the model.
@@ -45,7 +44,7 @@ A User Experience aspect I wanted to explore was using photographs as save files
 
 However, since node-based interfaces are not particularly easy to interact with on touch only devices of today, I used pen and paper to simulate the experience.
 
-The user interface for the app is generated using  UIKit/CoreGraphics. The code creates user interface elements that create affordances for interactivity and event handling. The UI was developed to be similar to iOS 11’s new Control Center in order to provide a sense of familiarity to users.
+The user interface for the app is generated using UIKit/CoreGraphics. The code creates user interface elements that create affordances for interactivity and event handling. The UI was developed to be similar to iOS 11’s new Control Center in order to provide a sense of familiarity to users.
 
 ### Conclusion:
 
