@@ -56,6 +56,7 @@
     margin-right: auto;
     margin-top: 20px;
     font-size: 1em;
+    color: white;
   }
 
   .me_img {
@@ -66,7 +67,7 @@
     font-family: "Avenir";
     font-size: 3em;
     font-weight: 400;
-    color: #aaa;
+    color: #ddd;
   }
 
   p {
@@ -97,7 +98,7 @@
 
   .portfolio_content_text {
     font-family: "Iosevka Web", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: #ccc;
   }
 
   .portfolio_link:hover {

@@ -22,6 +22,7 @@
     <ul>
       <li><a href="/blog"> Blog </a></li>
       <li><a href="/portfolio"> Portfolio </a></li>
+      <li><a href="/publications"> Publications </a></li>
     </ul>
   </nav>
 </div>
@@ -29,7 +30,7 @@
 <style>
   a {
     text-decoration: none;
-    color: black;
+    color: white;
     align-self: center;
   }
 
@@ -43,14 +44,14 @@
   nav {
     display: flex;
     height: 64px;
-    font-family: "Iosevka Web";
+    font-family: "Avenir Next";
     margin-top: 10px;
     margin-bottom: 20px;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid #afafaf;
-    /* background: #333; */
+    /* background: #222; */
   }
 
   ul {
@@ -64,5 +65,6 @@
     width: 16em;
     align-content: center;
     justify-content: center;
+    font-weight: bold;
   }
 </style>

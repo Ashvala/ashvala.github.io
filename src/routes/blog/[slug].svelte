@@ -63,14 +63,16 @@
   @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
   :global(body) {
     font-family: "Iosevka";
+    color: white;
   }
   h1.title {
-    margin-bottom: 10px;
+    margin-bottom: 10px;    
+    color: #ddd;
   }
 
-  a {
+  .post_content a {
     text-decoration: none;
-    color: #666;
+    color: #afafaf;
   }
 
   .post_content {
@@ -78,9 +80,15 @@
     line-height: 1.5em;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.3em;
+    color: #ddd;
   }
 
   .post_content img {
     max-width: 100%;
   }
+
+  .date{
+    color: #aaa;
+  }
+
 </style>

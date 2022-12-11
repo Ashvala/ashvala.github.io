@@ -13,7 +13,6 @@
 
 <script>
   export let posts;
-  console.log(posts);
 </script>
 
 <svelte:head>
@@ -55,8 +54,8 @@
   h2 {
     font-family: "Iosevka";
     margin-top: 1em;
-    font-weight: 400;
-    color: #aaa;
+    font-weight: 600;
+    color: #eee;
   }
 
   p {
@@ -64,6 +63,7 @@
     font-size: 0.95em;
     font-weight: 400;
     text-align: left;
+    color: white;
   }
 
   h2 {
@@ -77,7 +77,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 3px;
-    color: black;
+    color: #222;
     text-decoration: none !important;
   }
 
@@ -88,9 +88,11 @@
 
   .post_title {
     font-size: 1.6em;
+    color: white;
   }
   .excerpt {
     font-size: 1.1em;
+    color: #afafaf;
   }
 
   .me_img {
