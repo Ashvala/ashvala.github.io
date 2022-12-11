@@ -62,14 +62,14 @@
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
   :global(body) {
-    font-family: "Iosevka";
+    font-family: "Avenir";
     color: white;
   }
   h1.title {
     margin-bottom: 10px;    
     color: #ddd;
+    font-family: "Avenir", "Nunito", sans-serif;
   }
-
   .post_content a {
     text-decoration: none;
     color: #afafaf;
@@ -80,7 +80,7 @@
     line-height: 1.5em;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.3em;
-    color: #ddd;
+    color: #eee;
   }
 
   .post_content img {

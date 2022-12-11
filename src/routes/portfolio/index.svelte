@@ -46,13 +46,13 @@
 
 <style>
   :global(body) {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", "Nunito", sans-serif;
   }
   a h1 {
     text-decoration: None;
   }
   h1 {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", sans-serif;
     font-size: 3em;
     font-weight: 400;
     color: #aaa;
@@ -60,19 +60,21 @@
   }
 
   p {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", sans-serif;
     font-size: 0.95em;
     font-weight: 400;
     text-align: left;
   }
 
   h2 {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", sans-serif;
+    margin-top: 1em;
     margin-bottom: 20px;
+    color: white;
   }
 
   .portfolio_link {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", sans-serif;
     font-size: 1.1em;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -80,6 +82,7 @@
     padding-bottom: 10px;
     padding-left: 3px;
     text-decoration: none !important;
+    color: #aaa;
   }
 
   .portfolio_link:hover {

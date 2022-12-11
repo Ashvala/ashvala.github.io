@@ -49,10 +49,11 @@
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
   :global(body) {
-    font-family: "Iosevka Web";
+    font-family: "Avenir", "Nunito", sans-serif;
   }
   h1.title {
     margin-bottom: 10px;
+    color: #eee;
   }
 
   a {
@@ -65,6 +66,7 @@
     line-height: 1.5em;
     font-family: "Nunito";
     font-size: 1.1em;
+    color: #ddd;
   }
   .portfolio_meta_tech_item {
     display: inline-block;

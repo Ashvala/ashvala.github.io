@@ -11,7 +11,7 @@
 
   <Container>
     <Nav />
-    <h1>Publications</h1>
+    <h2>Publications</h2>
     <hr />
     <Row>
       <Col>
@@ -25,7 +25,15 @@
 
 <style> 
     .mainContainer {
-        margin-top: 20px;
+        font-family: "Avenir", "Nunito", sans-serif;
         color: white;
     }
+    h2{
+        font-family: "Avenir", sans-serif;
+        margin-top: 1em;
+        font-weight: 600;
+        color: #eee;
+    }
+
+
 </style>

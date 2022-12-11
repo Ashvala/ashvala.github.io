@@ -48,18 +48,18 @@
 
 <style>
   :global(body) {
-    font-family: "Iosevka";
+    font-family: "Avenir", "Nunito", sans-serif;
   }
 
   h2 {
-    font-family: "Iosevka";
+    font-family: "Avenir", sans-serif;
     margin-top: 1em;
     font-weight: 600;
     color: #eee;
   }
 
   p {
-    font-family: "Iosevka";
+    font-family: "Avenir", sans-serif;
     font-size: 0.95em;
     font-weight: 400;
     text-align: left;
