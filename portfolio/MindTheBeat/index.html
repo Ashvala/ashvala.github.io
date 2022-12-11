@@ -6,10 +6,14 @@
     <link rel="icon" href="/favicon.png" />
     <style>
       .bg-light {
-        background-color: #fff;
+        background-color: #222;
       }
       .post_content img {
         max-width: 100%;
+      }
+      body{
+        background: #111 !important;
+        color: white;
       }
     </style>
 
@@ -26,19 +30,19 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-00c1697e.js">
+		<link rel="modulepreload" href="/_app/start-9e8980a6.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-ec7912c1.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/layout.svelte-f4295365.js">
-		<link rel="modulepreload" href="/_app/pages/portfolio/_portfolioslug_.svelte-96ac370e.js">
-		<link rel="modulepreload" href="/_app/chunks/Nav-91c775a9.js">
+		<link rel="modulepreload" href="/_app/pages/portfolio/_portfolioslug_.svelte-dc9be83f.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-2cd9146b.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-28d9e71a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/portfolio/_portfolioslug_.svelte-20904353.css">
-		<link rel="stylesheet" href="/_app/assets/Nav-acc0ae02.css">
+		<link rel="stylesheet" href="/_app/assets/pages/portfolio/_portfolioslug_.svelte-5b63e58c.css">
+		<link rel="stylesheet" href="/_app/assets/Nav-633ffbed.css">
 
 		<script type="module">
-			import { start } from "/_app/start-00c1697e.js";
+			import { start } from "/_app/start-9e8980a6.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -52,7 +56,7 @@
 					error: null,
 					nodes: [
 						import("/_app/layout.svelte-f4295365.js"),
-						import("/_app/pages/portfolio/_portfolioslug_.svelte-96ac370e.js")
+						import("/_app/pages/portfolio/_portfolioslug_.svelte-dc9be83f.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -72,16 +76,17 @@
 
 <div class="container">
 
-<div><nav class="svelte-evt7o7"><h1 class="svelte-evt7o7"><a href="/" class="svelte-evt7o7">Ashvala Vinay </a></h1>
-    <ul class="svelte-evt7o7"><li class="svelte-evt7o7"><a href="/blog" class="svelte-evt7o7">Blog </a></li>
-      <li class="svelte-evt7o7"><a href="/portfolio" class="svelte-evt7o7">Portfolio </a></li></ul></nav>
+<div><nav class="svelte-1qigahw"><h1 class="svelte-1qigahw"><a href="/" class="svelte-1qigahw">Ashvala Vinay </a></h1>
+    <ul class="svelte-1qigahw"><li class="svelte-1qigahw"><a href="/blog" class="svelte-1qigahw">Blog </a></li>
+      <li class="svelte-1qigahw"><a href="/portfolio" class="svelte-1qigahw">Portfolio </a></li>
+      <li class="svelte-1qigahw"><a href="/publications" class="svelte-1qigahw">Publications </a></li></ul></nav>
 </div>
-  <div class="row"><h1 class="title svelte-1mksbkc">Mind the Beat (ICASSP 2021 Paper!)</h1>
-    <div class="portfolio_tech"><div class="portfolio_meta_tech_item svelte-1mksbkc">Python
-        </div><div class="portfolio_meta_tech_item svelte-1mksbkc">Pytorch
-        </div><div class="portfolio_meta_tech_item svelte-1mksbkc">Madmom
+  <div class="row"><h1 class="title svelte-1bbf3z0">Mind the Beat (ICASSP 2021 Paper!)</h1>
+    <div class="portfolio_tech"><div class="portfolio_meta_tech_item svelte-1bbf3z0">Python
+        </div><div class="portfolio_meta_tech_item svelte-1bbf3z0">Pytorch
+        </div><div class="portfolio_meta_tech_item svelte-1bbf3z0">Madmom
         </div></div>
-    <div class="post_content svelte-1mksbkc"><!-- HTML_TAG_START --><p><a href="https://ieeexplore.ieee.org/abstract/document/9414245">Published at ICASSP 2021!</a></p>
+    <div class="post_content svelte-1bbf3z0"><!-- HTML_TAG_START --><p><a href="https://ieeexplore.ieee.org/abstract/document/9414245">Published at ICASSP 2021!</a></p>
 <p><em>From the paper</em>:</p>
 <p><strong>Abstract:</strong>
 We propose a deep learning approach to predicting audio event onsets in electroencephalogram (EEG) recorded from users as they listen to music. We use a publicly available dataset containing ten contemporary songs and concurrently recorded EEG. We generate a sequence of onset labels for the songs in our dataset and trained neural networks (a fully connected network (FCN) and a recurrent neural network (RNN)) to parse one second windows of input EEG to predict one second windows of onsets in the audio. We compare our RNN network to both the standard spectral-flux based novelty function and the FCN. We find that our RNN was able to produce results that reflected its ability to generalize better than the other methods.Since there are no pre-existing works on this topic, the numbers presented in this paper may serve as useful benchmarks for future approaches to this research problem.</p><!-- HTML_TAG_END --></div></div></div>
