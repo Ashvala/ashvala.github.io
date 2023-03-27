@@ -6,6 +6,10 @@
 
 * Vinay, Ashvala, and Richard Boulanger. Building Interactive Systems with WebSockets and Csound! Georgia Institute of Technology, 2016. smartech.gatech.edu, https://smartech.gatech.edu/handle/1853/54637.
 
+* Smith, Jason Brent, Vinay, Ashvala and Freeman, Jason. The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library.
+
+
+
 ## Thesis
 
 * Vinay, Ashvala. "The sound within: Learning audio features from electroencephalogram recordings of music listening." Masters diss., Georgia Institute of Technology, 2020.
