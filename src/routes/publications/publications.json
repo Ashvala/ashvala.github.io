@@ -10,6 +10,16 @@
             "bibtex": "@inproceedings{vinay2023aquatk,\n  title={AQUATk: An Audio Assessment Toolkit},\n  author={Vinay, Ashvala and Lerch, Alexander},\n  booktitle={Late Breaking Demo at International Society for Music Information Retrieval Conference},\n  year={2023}\n}"
         },
         {
+            "name": "The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library",
+            "conf": "Joint Proceedings of the ACM IUI Workshops, 2023",
+            "authors": "Jason Smith, Ashvala Vinay, Jason Freeman",
+            "year": 2023,
+            "url": "iui23.pdf",
+            "abstract": "EarSketch is an online learning environment that teaches coding and music concepts through the computational manipulation of sounds selected from a large sound library. It features sound recommendations based on acoustic similarity and co-usage with a user's current sound selection in order to encourage exploration of the library. However, students have reported that the recommended sounds do not complement their current projects in terms of two areas: musical key and rhythm. We aim to improve the relevance of these recommendations through the inclusion of these two musically related features. This paper describes the addition of key signature and beat extraction to the EarSketch sound recommendation model in order to improve the musical compatibility of the recommendations with the sounds in a user’s project. Additionally, we present an analysis of the effects of these new recommendation strategies on user exploration and usage of the recommended sounds. The results of this analysis suggest that the addition of explicitly musically-relevant attributes increases the coverage of the sound library among sound recommendations as well as the sounds selected by users. It reflects the importance of including multiple musical attributes when building recommendation systems for creative and open-ended musical systems.",
+            "bibtex": "@inproceedings{smith2023impact,\n  title={The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library},\n  author={Smith, Jason and Vinay, Ashvala and Freeman, Jason},\n  booktitle={Joint Proceedings of the ACM IUI Workshops},\n  year={2023}\n}"
+
+        },
+        {
             "name": "Evaluating Generative Audio Systems and Their Metrics",
             "conf": "ISMIR 2022",
             "authors": "Ashvala Vinay, Alexander Lerch",
@@ -26,18 +36,6 @@
             "url": "icassp21.pdf",
             "abstract": "We propose a deep learning approach to predicting audio event onsets in electroencephalogram (EEG) recorded from users as they listen to music. We use a publicly available dataset containing ten contemporary songs and concurrently recorded EEG. We generate a sequence of onset labels for the songs in our dataset and trained neural networks (a fully connected network (FCN) and a recurrent neural network (RNN)) to parse one second windows of input EEG to predict one second windows of onsets in the audio. We compare our RNN network to both the standard spectral-flux based novelty function and the FCN. We find that our RNN was able to produce results that reflected its ability to generalize better than the other methods.Since there are no pre-existing works on this topic, the numbers presented in this paper may serve as useful benchmarks for future approaches to this research problem.",
             "bibtex": "@inproceedings{vinay2021mind,\n  title={Mind the Beat: Detecting Audio Onsets from EEG Recordings of Music Listening},\n  author={Vinay, Ashvala and Lerch, Alexander and Leslie, Grace},\n  booktitle={2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},\n year={2021},\n  organization={IEEE}\n}"
-
-        },
-        {
-            "name": "The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library",
-            "conf": "Joint Proceedings of the ACM IUI Workshops, 2023",
-            "authors": "Jason Smith, Ashvala Vinay, Jason Freeman",
-            "year": 2023,
-            "url": "iui23.pdf",
-            "abstract": "EarSketch is an online learning environment that teaches coding and music concepts through the computational manipulation of sounds selected from a large sound library. It features sound recommendations based on acoustic similarity and co-usage with a user's current sound selection in order to encourage exploration of the library. However, students have reported that the recommended sounds do not complement their current projects in terms of two areas: musical key and rhythm. We aim to improve the relevance of these recommendations through the inclusion of these two musically related features. This paper describes the addition of key signature and beat extraction to the EarSketch sound recommendation model in order to improve the musical compatibility of the recommendations with the sounds in a user’s project. Additionally, we present an analysis of the effects of these new recommendation strategies on user exploration and usage of the recommended sounds. The results of this analysis suggest that the addition of explicitly musically-relevant attributes increases the coverage of the sound library among sound recommendations as well as the sounds selected by users. It reflects the importance of including multiple musical attributes when building recommendation systems for creative and open-ended musical systems.",
-            "bibtex": "@inproceedings{smith2023impact,\n  title={The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library},\n  author={Smith, Jason and Vinay, Ashvala and Freeman, Jason},\n  booktitle={Joint Proceedings of the ACM IUI Workshops},\n  year={2023}\n}"
-
-        }
-        
+        }        
     ]
 }

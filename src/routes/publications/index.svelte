@@ -51,8 +51,11 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      margin-bottom: 1em;
+      margin-bottom: 2em;
 
+    }
+    .content{ 
+      margin-top: 2em;
     }
 
 </style>

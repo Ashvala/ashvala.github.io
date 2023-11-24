@@ -212,7 +212,6 @@ function queueRenderPage(num) {
     justify-content: left; 
     align-items: center; 
     width: 100%; 
-    height: 100%; 
     border: none;
     background: none;
 }
@@ -233,9 +232,7 @@ function queueRenderPage(num) {
 
 .option:hover{ 
     background: #0CA7DB;
-    opacity: 0.8;
     cursor: pointer;
-    translate: scale(1.1);
 }
 
 
@@ -256,6 +253,7 @@ canvas {
     border: none;
     background: none;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 11px;
 
     /* position: absolute; */
 }
@@ -281,19 +279,21 @@ canvas {
 
 .pdf_holder .controls{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 10px;
+    left: 35%;
 }
 
 .controls{ 
     position: absolute;
     display: flex;
     flex-direction: row;
-    width:100%;
+    width:25%;
     /* move to the bottom of the canvas */
     bottom: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(101, 101, 101, 0.25);
+    /* border radius for the bottom to be 10 px */ 
+    border-radius: 10px;
+
 }
 
 .left { 
@@ -301,24 +301,31 @@ canvas {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 20%;
     border: none;
-    background: rgba(0,0,0,0.25);
+    background: rgba(101, 101, 101, 0.25);
     color:white;
+    /* top left bottom left 10px; */ 
+    border-radius: 10px 0px 0px 10px;
+
+
 
 }
 
 .middle{ 
     display: inline-flex;
-
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 60%;
     border: none;
-    background: rgba(0,0,0,0.25);
-    color: white;
-
+    background:rgba(101, 101, 101, 0.25);  
+    color: #fff;    
+}
+.middle span { 
+    font-weight: bold; 
+    font-style: italic;
+    user-select: none
 }
 
 .right { 
@@ -326,26 +333,26 @@ canvas {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 20%;
     border: none;
-    background: rgba(0,0,0,0.25);
+    background: rgba(101, 101, 101, 0.25);
     color: white;
+    /* top right bottom right 10px; */
+    border-radius: 0px 10px 10px 0px;
+
 }
 
 
-/* align the spans inside of left and right to the center */
-
 .left span {
-    font-weight: bold;
-    font-size:2em;
+
+    font-size:1.5em;
     cursor:pointer;
     user-select: none;
 }
 
 .right span { 
 
-    font-size:2em;
-    font-weight: bold;
+    font-size:1.5em;
     cursor:pointer;
     user-select: none;
 }
