@@ -24,6 +24,7 @@
   },
   "type": "module",
   "dependencies": {
+    "canvas": "^2.11.2",
     "dayjs": "^1.10.7",
     "js-yaml": "^4.1.0",
     "rehype-highlight": "^4.1.0",

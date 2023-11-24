@@ -61,10 +61,7 @@
 
 <style lang="scss">
   @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
-  :global(body) {
-    font-family: "Avenir";
-    color: black;
-  }
+
   h1.title {
     margin-bottom: 10px;    
     color: #222;
@@ -75,17 +72,15 @@
   }
 
   .post_content {
-    width: 80%;
+    width: 60%;
     margin-top: 1em;
     line-height: 1.5em;
-    font-family: "Inter", Georgia, "Times New Roman", Times, serif;
-    font-size: 1.3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
     color: #111;
   }
 
-  .post_content img {
-    max-width: 100%;
-  }
+
 
   .date{
     color: #aaa;

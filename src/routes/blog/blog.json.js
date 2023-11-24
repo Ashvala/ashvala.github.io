@@ -20,8 +20,8 @@ export function get() {
   console.log(posts);
   posts.sort(
     (a, b) =>
-      dayjs(a.metadata.date, "MMM D, YYYY") -
-      dayjs(b.metadata.date, "MMM D, YYYY")
+      dayjs(b.metadata.date, "MMM D, YYYY") -
+      dayjs(a.metadata.date, "MMM D, YYYY")
   );
   let body = JSON.stringify(posts);
 

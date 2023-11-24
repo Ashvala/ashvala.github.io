@@ -220,9 +220,11 @@ canvas {
 
 .controls{ 
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: row;
-
+    width:100%;
+    /* move to the bottom of the canvas */
+    bottom: 0;
 }
 
 .left { 
@@ -231,9 +233,9 @@ canvas {
     justify-content: left;
     align-items: center;
     width: 10%;
-    height: 100%;
+
     border: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
     color:white;
 
 }
@@ -244,9 +246,8 @@ canvas {
     justify-content: right;
     align-items: center;
     width: 10%;
-    height: 100%;
     border: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.2);
     /* create a large gap that spans 40% of the width */
     margin-left: 80%;
     color: white;
@@ -279,6 +280,13 @@ canvas {
 .pdf_holder:hover .controls{
     display: flex;
 }
+
+canvas{
+    /* drop shadow */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
 
 /* if mobile, hide pdf viewer altogether and set the meta to full */
 
