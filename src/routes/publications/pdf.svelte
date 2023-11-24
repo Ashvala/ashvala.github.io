@@ -13,15 +13,24 @@
         pageRendering = false,
         pageNumPending = null,
         scale = 0.8,
+        numPages = 0,
         context = null;
+
+    
     // on mount
     onMount(() => {
+
+        /**  
+        * When hovering over left or right, add .shadow-drop-center class to it
+        */         
+
         PDFJS.GlobalWorkerOptions.workerSrc = pdfjsWorker;
         
         // let ctx = canvas.getContext('2d');
         const loadingTask = PDFJS.getDocument(url);
         loadingTask.promise.then(function (pdf) {
             pdfDoc = pdf;            
+            numPages = pdf.numPages;
             pdf.getPage(pageNum).then(function(page) {
                 console.log('Page loaded');
                 
@@ -126,12 +135,28 @@ function queueRenderPage(num) {
     queueRenderPage(pageNum);
   }
 
-  /**
-   * When you double click the canvas, it will full screen the canvas
-   */
+  function downloadBibtex(){ 
+    console.log('download bibtex')
+    // get bibtex from meta.bibtex
+    const bibtex = meta.bibtex;
+    // create a blob
+    const blob = new Blob([bibtex], {type: 'text/plain'});
+    // create a url from blob
+    const data = window.URL.createObjectURL(blob);
+    // create a link element
+    const link = document.createElement('a');
+    // set the href to the url
+    link.href = data;
+    // set the download attribute to the filename
+    link.download = meta.name + '.bib';
+    // trigger the click event on the link
+    link.click();
+    // remove the link from the dom
+    link.remove();
 
 
 
+  }
 
 
 </script> 
@@ -146,6 +171,9 @@ function queueRenderPage(num) {
                 <div class="left">
                     <span on:click={onPrevPage}> {'<'} </span>
                 </div>
+                <div class="middle"> 
+                    <span> {pageNum} / {numPages} </span>
+                </div>
                 <div class="right">
                     <span on:click={onNextPage}> {'>'} </span>
                 </div>            
@@ -158,6 +186,13 @@ function queueRenderPage(num) {
             <p> {meta.authors} </p>
             <p> {meta.conf} </p>
             <p> <span> Abstract: </span> {meta.abstract}</p>
+            <div class="options"> 
+                <div class="option" on:click={() => {window.open(url)}}> 
+                    <span> Download </span>
+                </div>
+                <div class="option" on:click={downloadBibtex}> 
+                    <span> BibTex </span>
+                </div>
         </div>
     </Col>
     </Row>  
@@ -170,6 +205,39 @@ function queueRenderPage(num) {
     border: none;
     background: none;
 }
+
+.options{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: left; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    border: none;
+    background: none;
+}
+
+.option{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    border: none;
+    background: #0CA7DB;
+    padding: 10px;
+    border-radius: 5px;    
+    color: white;
+    margin-right: 1em;
+    cursor: pointer;    
+}
+
+.option:hover{ 
+    background: #0CA7DB;
+    opacity: 0.8;
+    cursor: pointer;
+    translate: scale(1.1);
+}
+
 
 .card { 
     display: flex; 
@@ -187,6 +255,8 @@ canvas {
     height: 60%; 
     border: none;
     background: none;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
     /* position: absolute; */
 }
 
@@ -211,10 +281,9 @@ canvas {
 
 .pdf_holder .controls{
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
 }
 
 .controls{ 
@@ -224,66 +293,83 @@ canvas {
     width:100%;
     /* move to the bottom of the canvas */
     bottom: 0;
+    background: rgba(0,0,0,0.2);
 }
 
 .left { 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 10%;
-
     border: none;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.25);
     color:white;
 
 }
 
-.right { 
-    display: flex;
+.middle{ 
+    display: inline-flex;
+
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: none;
+    background: rgba(0,0,0,0.25);
+    color: white;
+
+}
+
+.right { 
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     width: 10%;
     border: none;
-    background: rgba(0,0,0,0.2);
-    /* create a large gap that spans 40% of the width */
-    margin-left: 80%;
+    background: rgba(0,0,0,0.25);
     color: white;
 }
 
+
 /* align the spans inside of left and right to the center */
 
-.left span { 
-    margin-left: 50%;
-    transform: translateX(-50%);
+.left span {
     font-weight: bold;
     font-size:2em;
     cursor:pointer;
-    /* disable selection of text */
     user-select: none;
 }
 
 .right span { 
-    margin-right: 25%;
-    transform: translateX(-50%);
+
     font-size:2em;
     font-weight: bold;
     cursor:pointer;
-    /* disable selection of text */
     user-select: none;
 }
 
 /* make controls visible on hover over canvas*/
 
-.pdf_holder:hover .controls{
-    display: flex;
+.right:hover{ 
+    /* make the controls opacity 0.5 */
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    /* drop shadow */
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
 }
 
-canvas{
+.left:hover{ 
+    /* make the controls opacity 0.5 */
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
     /* drop shadow */
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); */
+    /* animate a border radius */
+    /* border-radius: 5px; */
 }
+
 
 
 
