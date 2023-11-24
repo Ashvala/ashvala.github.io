@@ -35,11 +35,9 @@
 
 <style> 
     .mainContainer {
-        font-family: "Avenir", "Nunito", sans-serif;
         color: #333;
     }
     h2{
-        font-family: "Avenir", sans-serif;
         margin-top: 1em;
         font-weight: 600;
         color: #222;
