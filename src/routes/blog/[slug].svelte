@@ -63,12 +63,11 @@
   @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap");
   :global(body) {
     font-family: "Avenir";
-    color: white;
+    color: black;
   }
   h1.title {
     margin-bottom: 10px;    
-    color: #ddd;
-    font-family: "Avenir", "Nunito", sans-serif;
+    color: #222;
   }
   .post_content a {
     text-decoration: none;
@@ -76,11 +75,12 @@
   }
 
   .post_content {
+    width: 80%;
     margin-top: 1em;
     line-height: 1.5em;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Inter", Georgia, "Times New Roman", Times, serif;
     font-size: 1.3em;
-    color: #eee;
+    color: #111;
   }
 
   .post_content img {

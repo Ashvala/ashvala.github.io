@@ -16,6 +16,16 @@ const config = {
       assets: "build",
       fallback: null,
     }),
+    vite: { 
+      ssr: { 
+        noExternal: ["pdfjs-dist", "pdfjs-dist/build/pdf.worker.min.mjs?v=22fd2197"]
+      },
+      build: {
+        "module": "esnext",
+        "target": "ESNext",
+        "moduleResolution": "Node",
+      }
+    }
   },
 
   preprocess: [mdsvex(mdsvexConfig)],

@@ -48,22 +48,22 @@
 
 <style>
   :global(body) {
-    font-family: "Avenir", "Nunito", sans-serif;
+    font-family: "Inter", "Avenir", "Nunito", sans-serif;
   }
 
   h2 {
-    font-family: "Avenir", sans-serif;
+    font-family: "Inter", sans-serif;
     margin-top: 1em;
     font-weight: 600;
-    color: #eee;
+    color: #222;
   }
 
   p {
-    font-family: "Avenir", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 0.95em;
     font-weight: 400;
     text-align: left;
-    color: white;
+    color: black;
   }
 
   h2 {
@@ -71,7 +71,7 @@
   }
 
   .portfolio_link {
-    font-family: "Avenir", sans-serif;
+    /* font-family: "Avenir", sans-serif; */
     margin-bottom: 20px;
     margin-top: 20px;
     padding-top: 10px;
@@ -88,7 +88,7 @@
 
   .post_title {
     font-size: 1.6em;
-    color: white;
+    color: black;
   }
   .excerpt {
     font-size: 1.1em;

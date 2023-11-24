@@ -1,22 +1,32 @@
+<!-- <svelte:head> 
+  <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+</svelte:head> -->
 <script>
+    export const ssr = false;
+
     import { Styles } from "sveltestrap";
     import { base } from "$app/paths";
     import Nav from "$lib/Nav.svelte";
     import { Col, Container, Row } from "sveltestrap";
-    import Pubs  from "./pubs.md";
+    import Pdf from "./pdf.svelte";
+    import publications from "./publications.json";
 </script>
 
 
 <div class="mainContainer">
-
   <Container>
     <Nav />
     <h2>Publications</h2>
-    <hr />
+    <!-- <hr /> -->
     <Row>
       <Col>
         <div class="content">
-          <Pubs/>
+          {#each publications.publications as publication}
+          <div class="pdf_container">
+            <Pdf url="{base}/pdfs/{publication.url}" meta={publication} />
+          </div>
+          {/each}
+
         </div>
       </Col>
     </Row>
@@ -26,14 +36,23 @@
 <style> 
     .mainContainer {
         font-family: "Avenir", "Nunito", sans-serif;
-        color: white;
+        color: #333;
     }
     h2{
         font-family: "Avenir", sans-serif;
         margin-top: 1em;
         font-weight: 600;
-        color: #eee;
+        color: #222;
     }
+    .pdf_container {
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 1em;
 
+    }
 
 </style>

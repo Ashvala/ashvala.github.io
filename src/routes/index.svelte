@@ -49,14 +49,14 @@
 
 <style>
   :global(body) {
-    font-family: "Avenir";
+    font-family: "Inter", "Avenir";
   }
 
   .content {
     margin-right: auto;
     margin-top: 20px;
     font-size: 1em;
-    color: white;
+    color: black;
   }
 
   .me_img {
@@ -64,14 +64,14 @@
   }
 
   h1 {
-    font-family: "Avenir";
+    font-family: "Inter", "Avenir";
     font-size: 3em;
     font-weight: 400;
-    color: #ddd;
+    color: #111;
   }
 
   p {
-    font-family: "Avenir";
+    font-family: "Inter", "Avenir";
     font-size: 0.95em;
     font-weight: 400;
     text-align: left;
