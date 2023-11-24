@@ -11,6 +11,34 @@
       .post_content img {
         max-width: 100%;
       }
+      .post_content table{ 
+        width: 100%;
+      }
+      .shadow-drop-center {
+      -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+    @keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
       body{
         background: #efefef !important;
         color: white;
@@ -34,25 +62,25 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-5720ed68.js">
+		<link rel="modulepreload" href="/_app/start-defb6a13.js">
 		<link rel="modulepreload" href="/_app/chunks/index-fb3eacf8.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/layout.svelte-0373bc8c.js">
-		<link rel="modulepreload" href="/_app/pages/publications/index.svelte-97cbb752.js">
+		<link rel="modulepreload" href="/_app/pages/publications/index.svelte-c6980e87.js">
 		<link rel="modulepreload" href="/_app/chunks/Col-213ece60.js">
 		<link rel="modulepreload" href="/_app/chunks/Row-1273e342.js">
 		<link rel="modulepreload" href="/_app/chunks/Container-ac0d5b81.js">
 		<link rel="modulepreload" href="/_app/chunks/Nav-4e798ce2.js">
-		<link rel="modulepreload" href="/_app/pages/publications/pdf.svelte-abee3957.js">
+		<link rel="modulepreload" href="/_app/pages/publications/pdf.svelte-7f1613cb.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/publications/index.svelte-a8b95772.css">
 		<link rel="stylesheet" href="/_app/assets/Row-bdc9687c.css">
 		<link rel="stylesheet" href="/_app/assets/Nav-85fc70b0.css">
-		<link rel="stylesheet" href="/_app/assets/pages/publications/pdf.svelte-30da6c05.css">
+		<link rel="stylesheet" href="/_app/assets/pages/publications/pdf.svelte-a692cde2.css">
 
 		<script type="module">
-			import { start } from "/_app/start-5720ed68.js";
+			import { start } from "/_app/start-defb6a13.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -66,7 +94,7 @@
 					error: null,
 					nodes: [
 						import("/_app/layout.svelte-0373bc8c.js"),
-						import("/_app/pages/publications/index.svelte-97cbb752.js")
+						import("/_app/pages/publications/index.svelte-c6980e87.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -95,37 +123,49 @@
 </div>
     <h2 class="svelte-tf26pt">Publications</h2>
     
-    <div class="row"><div class="col"><div class="content"><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-flull0"><div class="row"><div class="col"><div class="pdf_holder svelte-flull0"><canvas class="pdf_viewer svelte-flull0"></canvas>
-            <div class="controls svelte-flull0"><div class="left svelte-flull0"><span class="svelte-flull0">&lt;</span></div>
-                <div class="right svelte-flull0"><span class="svelte-flull0">&gt;</span></div></div></div></div>
-    <div class="col"><div class="meta_holder svelte-flull0"><h3>AQUATk: An Audio Assessment Toolkit</h3>
+    <div class="row"><div class="col"><div class="content"><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-q0jkk0"><div class="row"><div class="col"><div class="pdf_holder svelte-q0jkk0"><canvas class="pdf_viewer svelte-q0jkk0"></canvas>
+            <div class="controls svelte-q0jkk0"><div class="left svelte-q0jkk0"><span class="svelte-q0jkk0">&lt;</span></div>
+                <div class="middle svelte-q0jkk0"><span>1 / 0</span></div>
+                <div class="right svelte-q0jkk0"><span class="svelte-q0jkk0">&gt;</span></div></div></div></div>
+    <div class="col"><div class="meta_holder svelte-q0jkk0"><h3>AQUATk: An Audio Assessment Toolkit</h3>
             <p>Ashvala Vinay, Alexander Lerch</p>
             <p>ISMIR 2023, Late Breaking Demo</p>
-            <p><span>Abstract: </span> Recent advancements in Neural Audio Synthesis (NAS) have outpaced the development of standardized evaluation methodologies and tools. To bridge this gap, we introduce AquaTk, an open-source Python library specifically designed to simplify and standardize the evaluation of NAS systems. AquaTk offers a range of audio quality metrics, including a unique Python implementation of the basic PEAQ algorithm, and operates in multiple modes to accommodate various user needs.</p></div></div></div>  
+            <p><span>Abstract: </span> Recent advancements in Neural Audio Synthesis (NAS) have outpaced the development of standardized evaluation methodologies and tools. To bridge this gap, we introduce AquaTk, an open-source Python library specifically designed to simplify and standardize the evaluation of NAS systems. AquaTk offers a range of audio quality metrics, including a unique Python implementation of the basic PEAQ algorithm, and operates in multiple modes to accommodate various user needs.</p>
+            <div class="options svelte-q0jkk0"><div class="option svelte-q0jkk0"><span>Download </span></div>
+                <div class="option svelte-q0jkk0"><span>BibTex </span></div></div></div></div></div>  
 </div>
-          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-flull0"><div class="row"><div class="col"><div class="pdf_holder svelte-flull0"><canvas class="pdf_viewer svelte-flull0"></canvas>
-            <div class="controls svelte-flull0"><div class="left svelte-flull0"><span class="svelte-flull0">&lt;</span></div>
-                <div class="right svelte-flull0"><span class="svelte-flull0">&gt;</span></div></div></div></div>
-    <div class="col"><div class="meta_holder svelte-flull0"><h3>Evaluating Generative Audio Systems and Their Metrics</h3>
+          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-q0jkk0"><div class="row"><div class="col"><div class="pdf_holder svelte-q0jkk0"><canvas class="pdf_viewer svelte-q0jkk0"></canvas>
+            <div class="controls svelte-q0jkk0"><div class="left svelte-q0jkk0"><span class="svelte-q0jkk0">&lt;</span></div>
+                <div class="middle svelte-q0jkk0"><span>1 / 0</span></div>
+                <div class="right svelte-q0jkk0"><span class="svelte-q0jkk0">&gt;</span></div></div></div></div>
+    <div class="col"><div class="meta_holder svelte-q0jkk0"><h3>Evaluating Generative Audio Systems and Their Metrics</h3>
             <p>Ashvala Vinay, Alexander Lerch</p>
             <p>ISMIR 2022</p>
-            <p><span>Abstract: </span> Recent years have seen considerable advances in audio synthesis with deep generative models. However, the state-of-the-art is very difficult to quantify; different studies often use different evaluation methodologies and different metrics when reporting results, making a direct comparison to other systems difficult if not impossible. Furthermore, the perceptual relevance and meaning of the reported metrics in most cases unknown, prohibiting any conclusive insights with respect to practical usability and audio quality. This paper presents a study that investigates state-of-the-art approaches side-by-side with (i) a set of previously proposed objective metrics for audio reconstruction, and with (ii) a listening study. The results indicate that currently used objective metrics are insufficient to describe the perceptual quality of current systems.</p></div></div></div>  
+            <p><span>Abstract: </span> Recent years have seen considerable advances in audio synthesis with deep generative models. However, the state-of-the-art is very difficult to quantify; different studies often use different evaluation methodologies and different metrics when reporting results, making a direct comparison to other systems difficult if not impossible. Furthermore, the perceptual relevance and meaning of the reported metrics in most cases unknown, prohibiting any conclusive insights with respect to practical usability and audio quality. This paper presents a study that investigates state-of-the-art approaches side-by-side with (i) a set of previously proposed objective metrics for audio reconstruction, and with (ii) a listening study. The results indicate that currently used objective metrics are insufficient to describe the perceptual quality of current systems.</p>
+            <div class="options svelte-q0jkk0"><div class="option svelte-q0jkk0"><span>Download </span></div>
+                <div class="option svelte-q0jkk0"><span>BibTex </span></div></div></div></div></div>  
 </div>
-          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-flull0"><div class="row"><div class="col"><div class="pdf_holder svelte-flull0"><canvas class="pdf_viewer svelte-flull0"></canvas>
-            <div class="controls svelte-flull0"><div class="left svelte-flull0"><span class="svelte-flull0">&lt;</span></div>
-                <div class="right svelte-flull0"><span class="svelte-flull0">&gt;</span></div></div></div></div>
-    <div class="col"><div class="meta_holder svelte-flull0"><h3>Mind the Beat: Detecting Audio Onsets from EEG Recordings of Music Listening</h3>
+          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-q0jkk0"><div class="row"><div class="col"><div class="pdf_holder svelte-q0jkk0"><canvas class="pdf_viewer svelte-q0jkk0"></canvas>
+            <div class="controls svelte-q0jkk0"><div class="left svelte-q0jkk0"><span class="svelte-q0jkk0">&lt;</span></div>
+                <div class="middle svelte-q0jkk0"><span>1 / 0</span></div>
+                <div class="right svelte-q0jkk0"><span class="svelte-q0jkk0">&gt;</span></div></div></div></div>
+    <div class="col"><div class="meta_holder svelte-q0jkk0"><h3>Mind the Beat: Detecting Audio Onsets from EEG Recordings of Music Listening</h3>
             <p>Ashvala Vinay, Alexander Lerch, Grace Leslie</p>
             <p>ICASSP 2021</p>
-            <p><span>Abstract: </span> We propose a deep learning approach to predicting audio event onsets in electroencephalogram (EEG) recorded from users as they listen to music. We use a publicly available dataset containing ten contemporary songs and concurrently recorded EEG. We generate a sequence of onset labels for the songs in our dataset and trained neural networks (a fully connected network (FCN) and a recurrent neural network (RNN)) to parse one second windows of input EEG to predict one second windows of onsets in the audio. We compare our RNN network to both the standard spectral-flux based novelty function and the FCN. We find that our RNN was able to produce results that reflected its ability to generalize better than the other methods.Since there are no pre-existing works on this topic, the numbers presented in this paper may serve as useful benchmarks for future approaches to this research problem.</p></div></div></div>  
+            <p><span>Abstract: </span> We propose a deep learning approach to predicting audio event onsets in electroencephalogram (EEG) recorded from users as they listen to music. We use a publicly available dataset containing ten contemporary songs and concurrently recorded EEG. We generate a sequence of onset labels for the songs in our dataset and trained neural networks (a fully connected network (FCN) and a recurrent neural network (RNN)) to parse one second windows of input EEG to predict one second windows of onsets in the audio. We compare our RNN network to both the standard spectral-flux based novelty function and the FCN. We find that our RNN was able to produce results that reflected its ability to generalize better than the other methods.Since there are no pre-existing works on this topic, the numbers presented in this paper may serve as useful benchmarks for future approaches to this research problem.</p>
+            <div class="options svelte-q0jkk0"><div class="option svelte-q0jkk0"><span>Download </span></div>
+                <div class="option svelte-q0jkk0"><span>BibTex </span></div></div></div></div></div>  
 </div>
-          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-flull0"><div class="row"><div class="col"><div class="pdf_holder svelte-flull0"><canvas class="pdf_viewer svelte-flull0"></canvas>
-            <div class="controls svelte-flull0"><div class="left svelte-flull0"><span class="svelte-flull0">&lt;</span></div>
-                <div class="right svelte-flull0"><span class="svelte-flull0">&gt;</span></div></div></div></div>
-    <div class="col"><div class="meta_holder svelte-flull0"><h3>The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library</h3>
+          </div><div class="pdf_container svelte-tf26pt"><div class="card_container svelte-q0jkk0"><div class="row"><div class="col"><div class="pdf_holder svelte-q0jkk0"><canvas class="pdf_viewer svelte-q0jkk0"></canvas>
+            <div class="controls svelte-q0jkk0"><div class="left svelte-q0jkk0"><span class="svelte-q0jkk0">&lt;</span></div>
+                <div class="middle svelte-q0jkk0"><span>1 / 0</span></div>
+                <div class="right svelte-q0jkk0"><span class="svelte-q0jkk0">&gt;</span></div></div></div></div>
+    <div class="col"><div class="meta_holder svelte-q0jkk0"><h3>The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library</h3>
             <p>Jason Smith, Ashvala Vinay, Jason Freeman</p>
             <p>Joint Proceedings of the ACM IUI Workshops, 2023</p>
-            <p><span>Abstract: </span> EarSketch is an online learning environment that teaches coding and music concepts through the computational manipulation of sounds selected from a large sound library. It features sound recommendations based on acoustic similarity and co-usage with a user&#39;s current sound selection in order to encourage exploration of the library. However, students have reported that the recommended sounds do not complement their current projects in terms of two areas: musical key and rhythm. We aim to improve the relevance of these recommendations through the inclusion of these two musically related features. This paper describes the addition of key signature and beat extraction to the EarSketch sound recommendation model in order to improve the musical compatibility of the recommendations with the sounds in a user’s project. Additionally, we present an analysis of the effects of these new recommendation strategies on user exploration and usage of the recommended sounds. The results of this analysis suggest that the addition of explicitly musically-relevant attributes increases the coverage of the sound library among sound recommendations as well as the sounds selected by users. It reflects the importance of including multiple musical attributes when building recommendation systems for creative and open-ended musical systems.</p></div></div></div>  
+            <p><span>Abstract: </span> EarSketch is an online learning environment that teaches coding and music concepts through the computational manipulation of sounds selected from a large sound library. It features sound recommendations based on acoustic similarity and co-usage with a user&#39;s current sound selection in order to encourage exploration of the library. However, students have reported that the recommended sounds do not complement their current projects in terms of two areas: musical key and rhythm. We aim to improve the relevance of these recommendations through the inclusion of these two musically related features. This paper describes the addition of key signature and beat extraction to the EarSketch sound recommendation model in order to improve the musical compatibility of the recommendations with the sounds in a user’s project. Additionally, we present an analysis of the effects of these new recommendation strategies on user exploration and usage of the recommended sounds. The results of this analysis suggest that the addition of explicitly musically-relevant attributes increases the coverage of the sound library among sound recommendations as well as the sounds selected by users. It reflects the importance of including multiple musical attributes when building recommendation systems for creative and open-ended musical systems.</p>
+            <div class="options svelte-q0jkk0"><div class="option svelte-q0jkk0"><span>Download </span></div>
+                <div class="option svelte-q0jkk0"><span>BibTex </span></div></div></div></div></div>  
 </div>
           </div></div></div></div></div>
 </div>

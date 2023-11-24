@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="/favicon.png" />
+    <style>
+      .bg-light {
+        background-color: #333;
+      }
+      .post_content img {
+        max-width: 100%;
+      }
+      .post_content table{ 
+        width: 100%;
+      }
+      .shadow-drop-center {
+      -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+    @keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+      body{
+        background: #efefef !important;
+        color: white;
+      }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <title>AQUATk: An Audio QUality Assessment Toolkit</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css" data-svelte="svelte-1izcv9f"><script data-svelte="svelte-1izcv9f">MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+    };
+  </script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" data-svelte="svelte-1izcv9f"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" data-svelte="svelte-p6kbwv"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" data-svelte="svelte-p6kbwv"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" data-svelte="svelte-p6kbwv"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" data-svelte="svelte-p6kbwv">
+
+		
+
+		<link rel="modulepreload" href="/_app/start-defb6a13.js">
+		<link rel="modulepreload" href="/_app/chunks/index-fb3eacf8.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
+		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
+		<link rel="modulepreload" href="/_app/layout.svelte-0373bc8c.js">
+		<link rel="modulepreload" href="/_app/pages/blog/_slug_.svelte-92902945.js">
+		<link rel="modulepreload" href="/_app/chunks/Nav-4e798ce2.js">
+		<link rel="modulepreload" href="/_app/chunks/Row-1273e342.js">
+		<link rel="modulepreload" href="/_app/chunks/Container-ac0d5b81.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/blog/_slug_.svelte-80eaa57d.css">
+		<link rel="stylesheet" href="/_app/assets/Nav-85fc70b0.css">
+		<link rel="stylesheet" href="/_app/assets/Row-bdc9687c.css">
+
+		<script type="module">
+			import { start } from "/_app/start-defb6a13.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/layout.svelte-0373bc8c.js"),
+						import("/_app/pages/blog/_slug_.svelte-92902945.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fblog\u002Faquatk",
+						query: new URLSearchParams(""),
+						params: {slug:"aquatk"}
+					}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<div class="container-sm">
+
+<div><nav class="svelte-t22uwa"><h1 class="svelte-t22uwa"><a href="/" class="svelte-t22uwa">Ashvala Vinay </a></h1>
+    <ul class="svelte-t22uwa"><li class="svelte-t22uwa"><a href="/blog" class="svelte-t22uwa">Blog </a></li>
+      
+      <li class="svelte-t22uwa"><a href="/publications" class="svelte-t22uwa">Publications </a></li></ul></nav>
+</div>
+  <div class="row"></div>
+  <div class="row"><h1 class="title svelte-1sy90yj">AQUATk: An Audio QUality Assessment Toolkit</h1>
+    <h4 class="date svelte-1sy90yj">NOV 20, 2023</h4>
+    <div class="post_content svelte-1sy90yj"><!-- HTML_TAG_START --><p>In 2022, my advisor and I published a paper called "Evaluating generative audio systems and their metrics" at ISMIR 2022, where we discussed this set of problems with evaluation of neural audio synthesis techniques at large:</p>
+<ol>
+<li>What are the metrics?</li>
+<li>Do any of them line up with perception?</li>
+<li>How do we evaluate these systems?</li>
+</ol>
+<p>While running the experiments necessary to extract sounds and their corresponding metrics, I noticed that the tooling around extracting metrics was not good. As an example, if I were to compute the Frechet Audio Distance, I'd have to do the following:</p>
+<ul>
+<li>Decide if I'm using Tensorflow (the reference implementation) or Pytorch (everyone's favorite framework)</li>
+<li>Setup google's entire research repo</li>
+<li>Spend time setting up the environment for <em>one</em> directory</li>
+<li>Break everything because of tensorflow and numpy</li>
+<li>Fix everything somehow</li>
+<li>Find that I now have to setup the VGGish model too?</li>
+<li>Spend time setting up the environment for <em>another</em> directory</li>
+<li>Once VGGish is setup, I can finally extract the embeddings</li>
+</ul>
+<p>Broadly, this is a significantly terrible way to extract metrics in my opinion. This is so far behind the curve compared to the tooling available to evaluate things like images and text. For instance, you can just download torchmetrics and use it directly to evaluate your models (which is great!) and while torchmetrics does come with a built in set of metrics for audio, it's not as exhaustive per se.</p>
+<p>So, I decided to build a toolkit that would allow me to extract metrics from audio files in a way that is easy to use and easy to extend. It's available on <a href="https://github.com/ashvala/AQUA-Tk">Github</a>. It will be on PyPi soon (check back in a few days).</p>
+<p>In the meanwhile, it has support the following metrics:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FAD</td>
+<td>Frechet Audio Distance</td>
+</tr>
+<tr>
+<td>KID</td>
+<td>Kernel Inception Distance</td>
+</tr>
+<tr>
+<td>PEAQb</td>
+<td>Basic PEAQ</td>
+</tr>
+<tr>
+<td>NDB/k</td>
+<td>Number of Different Bins over K</td>
+</tr>
+<tr>
+<td>SISDR</td>
+<td>Scale-Invariant SDR</td>
+</tr>
+<tr>
+<td>SNR</td>
+<td>Signal-to-Noise Ratio</td>
+</tr>
+<tr>
+<td>MAE</td>
+<td>Mean Absolute Error</td>
+</tr>
+<tr>
+<td>MSE</td>
+<td>Mean Squared Error</td>
+</tr>
+<tr>
+<td>KL</td>
+<td>Kullback-Leibler Divergence</td>
+</tr>
+</tbody>
+</table>
+<p>It also has a cool Python port of PEAQ!</p>
+<p>I'm still working on adding documentation, more metrics and improving the code quality. If you have any suggestions, please feel free to open an issue on Github!</p>
+<p>Looking forward to you using the toolkit!</p><!-- HTML_TAG_END --></div></div></div>
+
+
+
+			<script type="application/json" data-type="svelte-data" data-url="/blog/aquatk.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"{\"metadata\":{\"title\":\"AQUATk: An Audio QUality Assessment Toolkit\",\"date\":\"Nov 20, 2023\",\"excerpt\":\"You got the audio? I have the metrics!\"},\"content\":\"\u003Cp\u003EIn 2022, my advisor and I published a paper called \\\"Evaluating generative audio systems and their metrics\\\" at ISMIR 2022, where we discussed this set of problems with evaluation of neural audio synthesis techniques at large:\u003C\u002Fp\u003E\\n\u003Col\u003E\\n\u003Cli\u003EWhat are the metrics?\u003C\u002Fli\u003E\\n\u003Cli\u003EDo any of them line up with perception?\u003C\u002Fli\u003E\\n\u003Cli\u003EHow do we evaluate these systems?\u003C\u002Fli\u003E\\n\u003C\u002Fol\u003E\\n\u003Cp\u003EWhile running the experiments necessary to extract sounds and their corresponding metrics, I noticed that the tooling around extracting metrics was not good. As an example, if I were to compute the Frechet Audio Distance, I'd have to do the following:\u003C\u002Fp\u003E\\n\u003Cul\u003E\\n\u003Cli\u003EDecide if I'm using Tensorflow (the reference implementation) or Pytorch (everyone's favorite framework)\u003C\u002Fli\u003E\\n\u003Cli\u003ESetup google's entire research repo\u003C\u002Fli\u003E\\n\u003Cli\u003ESpend time setting up the environment for \u003Cem\u003Eone\u003C\u002Fem\u003E directory\u003C\u002Fli\u003E\\n\u003Cli\u003EBreak everything because of tensorflow and numpy\u003C\u002Fli\u003E\\n\u003Cli\u003EFix everything somehow\u003C\u002Fli\u003E\\n\u003Cli\u003EFind that I now have to setup the VGGish model too?\u003C\u002Fli\u003E\\n\u003Cli\u003ESpend time setting up the environment for \u003Cem\u003Eanother\u003C\u002Fem\u003E directory\u003C\u002Fli\u003E\\n\u003Cli\u003EOnce VGGish is setup, I can finally extract the embeddings\u003C\u002Fli\u003E\\n\u003C\u002Ful\u003E\\n\u003Cp\u003EBroadly, this is a significantly terrible way to extract metrics in my opinion. This is so far behind the curve compared to the tooling available to evaluate things like images and text. For instance, you can just download torchmetrics and use it directly to evaluate your models (which is great!) and while torchmetrics does come with a built in set of metrics for audio, it's not as exhaustive per se.\u003C\u002Fp\u003E\\n\u003Cp\u003ESo, I decided to build a toolkit that would allow me to extract metrics from audio files in a way that is easy to use and easy to extend. It's available on \u003Ca href=\\\"https:\u002F\u002Fgithub.com\u002Fashvala\u002FAQUA-Tk\\\"\u003EGithub\u003C\u002Fa\u003E. It will be on PyPi soon (check back in a few days).\u003C\u002Fp\u003E\\n\u003Cp\u003EIn the meanwhile, it has support the following metrics:\u003C\u002Fp\u003E\\n\u003Ctable\u003E\\n\u003Cthead\u003E\\n\u003Ctr\u003E\\n\u003Cth\u003E\u003C\u002Fth\u003E\\n\u003Cth\u003E\u003C\u002Fth\u003E\\n\u003C\u002Ftr\u003E\\n\u003C\u002Fthead\u003E\\n\u003Ctbody\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EFAD\u003C\u002Ftd\u003E\\n\u003Ctd\u003EFrechet Audio Distance\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EKID\u003C\u002Ftd\u003E\\n\u003Ctd\u003EKernel Inception Distance\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EPEAQb\u003C\u002Ftd\u003E\\n\u003Ctd\u003EBasic PEAQ\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003ENDB\u002Fk\u003C\u002Ftd\u003E\\n\u003Ctd\u003ENumber of Different Bins over K\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003ESISDR\u003C\u002Ftd\u003E\\n\u003Ctd\u003EScale-Invariant SDR\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003ESNR\u003C\u002Ftd\u003E\\n\u003Ctd\u003ESignal-to-Noise Ratio\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EMAE\u003C\u002Ftd\u003E\\n\u003Ctd\u003EMean Absolute Error\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EMSE\u003C\u002Ftd\u003E\\n\u003Ctd\u003EMean Squared Error\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003Ctr\u003E\\n\u003Ctd\u003EKL\u003C\u002Ftd\u003E\\n\u003Ctd\u003EKullback-Leibler Divergence\u003C\u002Ftd\u003E\\n\u003C\u002Ftr\u003E\\n\u003C\u002Ftbody\u003E\\n\u003C\u002Ftable\u003E\\n\u003Cp\u003EIt also has a cool Python port of PEAQ!\u003C\u002Fp\u003E\\n\u003Cp\u003EI'm still working on adding documentation, more metrics and improving the code quality. If you have any suggestions, please feel free to open an issue on Github!\u003C\u002Fp\u003E\\n\u003Cp\u003ELooking forward to you using the toolkit!\u003C\u002Fp\u003E\"}"}</script>
+		</div>
+  </body>
+</html>

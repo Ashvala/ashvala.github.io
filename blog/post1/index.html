@@ -11,6 +11,34 @@
       .post_content img {
         max-width: 100%;
       }
+      .post_content table{ 
+        width: 100%;
+      }
+      .shadow-drop-center {
+      -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+    @keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
       body{
         background: #efefef !important;
         color: white;
@@ -42,22 +70,22 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-5720ed68.js">
+		<link rel="modulepreload" href="/_app/start-defb6a13.js">
 		<link rel="modulepreload" href="/_app/chunks/index-fb3eacf8.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/layout.svelte-0373bc8c.js">
-		<link rel="modulepreload" href="/_app/pages/blog/_slug_.svelte-79e23df8.js">
+		<link rel="modulepreload" href="/_app/pages/blog/_slug_.svelte-92902945.js">
 		<link rel="modulepreload" href="/_app/chunks/Nav-4e798ce2.js">
 		<link rel="modulepreload" href="/_app/chunks/Row-1273e342.js">
 		<link rel="modulepreload" href="/_app/chunks/Container-ac0d5b81.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/pages/blog/_slug_.svelte-b308303b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/blog/_slug_.svelte-80eaa57d.css">
 		<link rel="stylesheet" href="/_app/assets/Nav-85fc70b0.css">
 		<link rel="stylesheet" href="/_app/assets/Row-bdc9687c.css">
 
 		<script type="module">
-			import { start } from "/_app/start-5720ed68.js";
+			import { start } from "/_app/start-defb6a13.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -71,7 +99,7 @@
 					error: null,
 					nodes: [
 						import("/_app/layout.svelte-0373bc8c.js"),
-						import("/_app/pages/blog/_slug_.svelte-79e23df8.js")
+						import("/_app/pages/blog/_slug_.svelte-92902945.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -97,9 +125,9 @@
       <li class="svelte-t22uwa"><a href="/publications" class="svelte-t22uwa">Publications </a></li></ul></nav>
 </div>
   <div class="row"></div>
-  <div class="row"><h1 class="title svelte-nbzgqa">Hello World.</h1>
-    <h4 class="date svelte-nbzgqa">SEP 8, 2021</h4>
-    <div class="post_content svelte-nbzgqa"><!-- HTML_TAG_START --><p>Hello, I built this blog using SvelteKit. A huge amount of the architecture behind this page is
+  <div class="row"><h1 class="title svelte-1sy90yj">Hello World.</h1>
+    <h4 class="date svelte-1sy90yj">SEP 8, 2021</h4>
+    <div class="post_content svelte-1sy90yj"><!-- HTML_TAG_START --><p>Hello, I built this blog using SvelteKit. A huge amount of the architecture behind this page is
 inspired by <a href="https://github.com/svelteland/svelte-kit-blog-demo">Svelteland's svelte-kit-blog-demo repository</a>.</p>
 <p>An idea that is commonly articulated about weblogs is that they are a good place to catalog one's thoughts and work. I'm hoping that in starting a blog (again), I will find motivation to share what I'm up to in a more informal &#x26; frequent setting.</p>
 <p>A common theme with the things I've done in my life is that I used to do a lot of these things as a teenager, but, as I entered my twentys, these stopped being very important. In reflection, it feels like something that I have missed. I used to run a few weblogs both by myself and with friends where I talked about my fascination with the world of gadgets and technology at large.</p>

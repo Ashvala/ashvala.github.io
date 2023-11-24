@@ -11,6 +11,34 @@
       .post_content img {
         max-width: 100%;
       }
+      .post_content table{ 
+        width: 100%;
+      }
+      .shadow-drop-center {
+      -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
+    @keyframes shadow-drop-center {
+      0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+                box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
+    }
       body{
         background: #efefef !important;
         color: white;
@@ -34,7 +62,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-5720ed68.js">
+		<link rel="modulepreload" href="/_app/start-defb6a13.js">
 		<link rel="modulepreload" href="/_app/chunks/index-fb3eacf8.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
@@ -43,7 +71,7 @@
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 
 		<script type="module">
-			import { start } from "/_app/start-5720ed68.js";
+			import { start } from "/_app/start-defb6a13.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
