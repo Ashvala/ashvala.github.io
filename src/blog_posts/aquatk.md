@@ -40,6 +40,8 @@ In the meanwhile, it has support the following metrics:
 | MSE | Mean Squared Error              |
 | KL | Kullback-Leibler Divergence     |
 
+It also has a cool Python port of PEAQ! 
 
+I'm still working on adding documentation, more metrics and improving the code quality. If you have any suggestions, please feel free to open an issue on Github!
 
-
+Looking forward to you using the toolkit!
