@@ -1,4 +1,3 @@
-
 <script> 
     export let url;
     export let meta;
@@ -138,8 +137,8 @@ function queueRenderPage(num) {
 </script> 
 
 <div class="card_container"> 
-        <Row>
-            <Col>
+    <Row>
+        <Col>
         <div class="pdf_holder"> 
             <canvas class="pdf_viewer" bind:this={canvas} > 
             </canvas>
