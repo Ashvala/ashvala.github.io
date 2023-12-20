@@ -18,7 +18,25 @@
       -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
               animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+    @page { 
+      margin-top: 10mm;
+      size: letter;
+    }
 
+    @media print{
+      p{
+          font-size: 10pt;
+          line-height: 1.25em;
+          font-weight: 500;
+      }
+      .backButton{
+          display: none !important;
+      }
+      .page{ 
+          page-break-after: always;
+          margin-top: 2px;
+      }
+    }
     @-webkit-keyframes shadow-drop-center {
       0% {
         -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
@@ -56,6 +74,8 @@
     />
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lusitana">
+
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <title>AQUATk: An Audio QUality Assessment Toolkit</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css" data-svelte="svelte-1izcv9f"><script data-svelte="svelte-1izcv9f">MathJax = {
@@ -70,7 +90,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-5aedbe47.js">
+		<link rel="modulepreload" href="/_app/start-ef50fd11.js">
 		<link rel="modulepreload" href="/_app/chunks/index-d48aa217.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
@@ -84,7 +104,7 @@
 		<link rel="stylesheet" href="/_app/assets/Row-bdc9687c.css">
 
 		<script type="module">
-			import { start } from "/_app/start-5aedbe47.js";
+			import { start } from "/_app/start-ef50fd11.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
