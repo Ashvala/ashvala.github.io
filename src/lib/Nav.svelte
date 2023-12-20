@@ -67,4 +67,5 @@
     justify-content: center;
     font-weight: bold;
   }
+  
 </style>

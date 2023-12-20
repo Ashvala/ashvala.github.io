@@ -361,6 +361,7 @@ canvas {
 
 .right:hover{ 
     /* make the controls opacity 0.5 */
+    transition: all 250ms;
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
     /* drop shadow */
@@ -369,6 +370,7 @@ canvas {
 
 .left:hover{ 
     /* make the controls opacity 0.5 */
+    transition: all 1s;
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
     /* drop shadow */

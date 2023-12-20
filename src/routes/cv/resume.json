@@ -1,0 +1,184 @@
+{
+	"name": "Ashvala Vinay",
+	"mail": "mail@ashvala.net",
+	"homepage": "https://ashva.la",	
+	"edu": [
+        {
+			"title": "PhD, Music Technology (Machine Learning minor)",
+            "school": "Georgia Institute of Technology",
+			"start": "Aug 2020",
+			"end": "Mar 2024*",
+			"description": "Advised by Prof. Alexander Lerch. Dissertation work focuses on building evaluation metrics for neural audio synthesizers. The metrics focus on quality of audio synthesis and the measuring the ability of a synthesizer to morph between two sounds."
+		},
+		{
+			"title": "Masters, Music Technology",
+			"school": "Georgia Institute of Technology",
+			"start": "Aug 2018",
+			"end": "May 2020",
+			"description": "Relevant Coursework: Deep Learning for Music, Mathematical Foundations of Machine learning, Statistical Machine Learning, Digital Signal Processing, Music Information Retireval, Interactive Music, Human Computer Interaction.<br/><br/> Won 2nd place at the Convergence in Innovation Competition."
+		},
+		{
+			"title": "Bachelors, Music Technology",
+			"school": "Berklee College of Music",
+			"start": "May 2013",
+			"end": "May 2016",
+			"description": "TDK Music Technology award for outstanding achievement (Fall 2015)<br/>Dean’s List: Summer 2013, Summer 2015, Spring 2016"
+		}
+    ],
+	"work": [
+		{
+			"title": "Graduate Research Assistant, Earsketch",
+			"company": "Georgia Institute of Technology",
+			"start": "Jan 2022",
+			"end": "August 2023",
+			"description": "• EarSketch is an educational platform that helps children learn programming through music. the sound recommendation engine and the UI.<br/>• Worked on the sound recommendation engine: augmented the existing engine with information about musical keys, rhythm and beats to make more musically driven suggestions.<br/>• Worked on the redesign to the sound browser, which was implemented in the summer of 2022."
+		},
+		{
+			"title": "Graduate Research Assistant, Brain Music Lab",
+			"company": "Georgia Institute of Technology",
+			"start": "Jan 2019",
+			"end": "Jan 2022",
+			"description": "• Worked with Prof. Grace Leslie on designing and developing frameworks for analysis  of multi-modal data with a specific focus on audio and physiological data from EEG and ECoG in addition to data from sensors such as the Leap Motion."
+		},
+		{
+			"title": "Research Intern",
+			"company": "Corohealth",
+			"start": "May 2021",
+			"end": "August 2021",
+			"description": "• Corohealth is a startup focused on healthcare through music therapy.<br/>• During my time there, I designed and built algorithms that allowed them to generate relevant playlists for a variety of purposes using their internal data.<br/>• I also built user interfaces that allowed them to explore their datasets."
+		},
+		{
+			"title": "Developer",
+			"company": "Keyo AI",
+			"start": "Feb 2017",
+			"end": "July 2017",
+			"description": "•Developed a property search engine for addresses in the United States.<br/>• Managed a database of 80 million records with data from the United States Census Bureau and public city data.<br/>• The stack was developed with JavaScript, Postgres, Jade and PostGIS.<br/>• Company acquired by Zillow in 2022"
+		},
+		{
+			"title": "Developer, Technical Co-Founder",
+			"company": "LiveAds Inc",
+			"start": "Nov 2016",
+			"end": "Feb 2017",
+			"description": "• Worked on Prompt, an intelligent teleprompter and streaming tool that was contextually aware of interests to aid in livestreaming.<br/>• Pivoted Prompt into Streamstager. Streamstager is a platform to create interactive overlays intended for use in livestreams on social media platforms.<br/>• Used by VISA in the Super Bowl streams they ran from Houston, Texas in 2017."
+		},
+		{
+			"title": "Developer",
+			"company": "Boulanger Labs",
+			"start": "Dec 2014",
+			"end": "July 2016",
+			"description": "• Muse is a Leap Motion exclusive ambient music generation app built on top of OpenFrameworks and Csound.<br/>• Designed in collaboration with Grammy nominated artist BT.<br/>• Inherited an existing codebase where I fixed bugs and optimized it.<br/>• In addition to fixes, helped create a Windows version using the macOS codebase."
+		}
+	],	
+	"teaching": [
+		{
+			"title": "Instructor, Audio Content Analysis",
+			"company": "Georgia Institute of Technology",
+			"start": "Fall 2023",
+			"end": "Dec 2023",
+			"description": "Instructed a course on audio content analysis, covering signal processing, feature extraction, machine learning techniques, evaluation, and MIR methodology."
+		},
+		{
+			"title": "Teaching Assistant, Music Perception and Cognition",
+			"company": "Georgia Institute of Technology",
+			"start": "Spring 2021",
+			"end": "May 2021",
+			"description": "Assisted in a course examining how humans process musical sound, covering auditory systems, psychoacoustics, music cognition, and psychology. Responsibilities included teaching lectures and grading."
+		},
+		{
+			"title": "Teaching Assistant, Music Technology History and Repertoire",
+			"company": "Georgia Institute of Technology",
+			"start": "Fall 2020",
+			"end": "Dec 2020",
+			"description": "Assisted in a graduate course on the history, aesthetics, and technology of computer and electronic music. Responsibilities included teaching lectures and grading."
+		},
+		{
+			"title": "Teaching Assistant, Csound and Audio Programming Classes",
+			"company": "Berklee College of Music",
+			"start": "2015",
+			"end": "2015",
+			"description": "Supported classes on sound design, composition, and audio programming, working extensively with Dr. Richard Boulanger. Managed class examples and provided office hours support."
+		}
+	],
+	"pubs": [
+		{
+			"title": "<b> Vinay, Ashvala </b> & Lerch, Alexander. (2023). AQUATK: An Audio Quality Assessment Toolkit. Late Breaking Demos. 24th International Society for Music Information Retreival, Milan, Italy."
+		},
+		{
+			"title": "Smith, Jason B., <b> Vinay, Ashvala. </b>, & Freeman, Jason. (2023). The Impact of Salient Musical Features in a Hybrid Recommendation System for a Sound Library. Joint Proceedings of the ACM IUI Workshops. 3rd Workshop on Intelligent Music Interfaces for Listening and Creation."
+		},		
+		{
+			"title": "<b>Vinay, Ashvala</b>, and Lerch, Alexander. (2022). Evaluating Generative Audio Systems and their Metrics. Proceedings of the International Society for Music Information Retrieval Conference (ISMIR). ISMIR, Bangalore, IN."
+		},
+		{
+			"title": "Rahimi, Syedahmad, Smith, Jason B., Truesdell, Erin. J. K., <b>Vinay, Ashvala</b>, Boyer, Kristy E., Magerko, Brian, Freeman, Jason, & Mcklin, Tom (n.d.). Validity and Fairness of an Automated Assessment of Creativity in Computational Music Remixing. Workshop on Automated Assessment and Guidance of Project Work. 24th International Conference on Artificial Intelligence in Education, 2023."			
+		},
+		{
+			"title": "<b>Vinay, Ashvala</b>, Alexander Lerch, and Grace Leslie. (2021). \"Mind the beat: detecting audio onsets from EEG recordings of music listening.\" ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2021."
+		}
+	],
+	"academic_service": [
+		{
+			"event": "ISMIR 2024",
+			"role": "Organizing Group Member",
+			"description": "I am currently a member of the ISMIR 2024 organizing group, I will be reprising my role as web-chair and take lead on any infrastructure needs, website development and content management."
+		},
+		{
+			"event": "MILC 2023",
+			"role": "Organizing Group Member",
+			"description": "I was one of the organizers of the 3rd Intelligent Music Interfaces for Listening and Creation workshop held at IUI 2023. I helped with the website design and content (https://milc2023.github.io). I also helped with the peer review process."
+		},
+		{
+			"event": "ISMIR 2022",
+			"role": "Organizing Group Member",
+			"description": "As a member of the ISMIR 2022 organizing group, I helped with organizing the infrastructure for hosting and deployment used for the conference (http://ismir2022.ismir.net)."
+		},
+		{
+			"event": "ISMIR 2021",
+			"role": "Organizing Group Member",
+			"description": "As a member of the ISMIR 2021 organizing group, I worked on developing and deploying the webpage for the conference (http://ismir2021.ismir.net). I implemented code in Jekyll, Javascript and Sass for this project. "
+		}
+	],
+	"projects": [
+		{
+			"name": "AquaTK",
+			"description": "• AquaTK = Audio Quality Assessment Toolkit.<br/>• It’s a python based library designed to help with evaluating the audio quality from generative audio models<br/>• Recently demoed at ISMIR 2022 as part of the LBD<br/>• Implements several popular metrics including FAD, Kernel Distances and PEAQ<br/>• 70+ stars on GitHub",
+			"url": "https://github.com/ashvala/Aqua-Tk"
+		},
+		{
+			"name": "PaperSynth",
+			"description": "• PaperSynth is a free, open source iOS app designed to take photos and convert them into interactive synthesizers.<br/>• The original implementation’s OCR algorithm for character and word recognition was created with Keras.<br/>• The repository is one of the top 25 repositories on GitHub for AudioKit.<br/>• The audio engine was written with AudioKit.",
+			"url": "https://github.com/Ashvala/PaperSynth"
+		},
+		{
+			"name": "Audio Style Transfer",
+			"description": "• Class Project for Special Problems (MUSI-8903).<br/>• We designed, developed and trained a deep neural network to learn representations and classify raw audio data from NSynth data.<br/>• This was then applied to produce style-transfer on timbre.",
+			"url": "https://github.com/Ashvala/DeepLearning8903-Project"
+		},
+		{
+			"name": "Jamiable",
+			"description": "• Class Project for Human Computer Interaction.<br/>• Worked on the design and interface building for this project.<br/>• Designed wireframes and created prototype user interfaces.<br/>• Won second place at the Convergence in Innovation competition at Georgia Tech."
+		}
+	],
+	"awards": [
+		{
+			"title": "TDK Music Technology Award for outstanding achievement, 2015"
+		},
+		{
+			"title": "2nd place, Convergence in Innovation Competition 2021, Georgia Tech"
+		}
+	],
+	"skills": [
+		{
+			"title": "Specializations",
+			"description": "Machine Learning, Deep Learning, Audio Evaluation, Music Information Retrieval (MIR), Human-Computer Interaction (HCI) and User Interface design."			
+		},
+		{
+			"title": "Programming",
+			"description": "Languages: Python, Swift, JavaScript, TypeScript, MATLAB, Haskell, Max/MSP, Csound<br/>Frameworks: PyTorch, Numpy, React, SvelteJS, AudioKit, CoreAudio, CoreML, TidalCycles"			
+		},
+		{
+			"title": "Audio Production tools",
+			"description": "Logic Pro and Ableton Live"
+		}
+	]
+}
