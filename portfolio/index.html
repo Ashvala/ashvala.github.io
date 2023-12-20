@@ -67,12 +67,12 @@
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-e4860ae8.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/layout.svelte-0243a194.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-72a1662c.js">
+		<link rel="modulepreload" href="/_app/pages/portfolio/index.svelte-ecd7f562.js">
 		<link rel="modulepreload" href="/_app/chunks/Nav-147b992b.js">
 		<link rel="modulepreload" href="/_app/chunks/Row-6f87d821.js">
 		<link rel="modulepreload" href="/_app/chunks/Col-0c24f64c.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-13197380.css">
+		<link rel="stylesheet" href="/_app/assets/pages/portfolio/index.svelte-d6e98be0.css">
 		<link rel="stylesheet" href="/_app/assets/Nav-1177e5bc.css">
 		<link rel="stylesheet" href="/_app/assets/Row-bdc9687c.css">
 
@@ -91,11 +91,11 @@
 					error: null,
 					nodes: [
 						import("/_app/layout.svelte-0243a194.js"),
-						import("/_app/pages/index.svelte-72a1662c.js")
+						import("/_app/pages/portfolio/index.svelte-ecd7f562.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fportfolio",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -119,27 +119,22 @@
       <li class="svelte-aa1ffq"><a href="/publications" class="svelte-aa1ffq">Publications </a></li></ul></nav>
 </div>
 
-  <div xs class="row"><div class="col"><img alt="Ashvala" src="/me.jpg" class="me_img img-thumbnail"></div>
-    <div class="col"><div class="content svelte-uozk54"><h1 class="svelte-uozk54">Hi, I am Ashvala Vinay!</h1>
-        <p class="svelte-uozk54">I am a PhD student at Georgia Tech&#39;s Center for Music Technology. I am
-          currently working with Prof. Alexander Lerch on problems related to
-          evaluating generative audio synthesizers.
-        </p>
-        <p class="svelte-uozk54">I graduated from Berklee College of Music in 2016. Following that, I
-          worked on some personal projects and helped get two startups off the
-          ground with their software engineering work. After that, I got my
-          Masters in Music Technology at GTCMT.
-        </p>
-        <p class="svelte-uozk54">On this page, I will be sharing my work, and some posts where I will
-          discuss music, technology and my progress through the course of my PhD
-          work.
-        </p></div></div></div>
-  <hr>
-  <div class="row"></div></div>
+  <div class="row"><div class="col"><h2 class="svelte-1wqtmnu">Portfolio</h2>
+      <a href="/portfolio/Bioreactive"><div class="portfolio_link svelte-1wqtmnu" data-title="Bioreactive Music">Bioreactive Music</div>
+        </a><a href="/portfolio/Jie"><div class="portfolio_link svelte-1wqtmnu" data-title="Jie">Jie</div>
+        </a><a href="/portfolio/Keyo"><div class="portfolio_link svelte-1wqtmnu" data-title="Keyo">Keyo</div>
+        </a><a href="/portfolio/LidarViewer"><div class="portfolio_link svelte-1wqtmnu" data-title="Lidar Viewer">Lidar Viewer</div>
+        </a><a href="/portfolio/LiveAds"><div class="portfolio_link svelte-1wqtmnu" data-title="LiveAds">LiveAds</div>
+        </a><a href="/portfolio/MindTheBeat"><div class="portfolio_link svelte-1wqtmnu" data-title="Mind the Beat (ICASSP 2021 Paper!)">Mind the Beat (ICASSP 2021 Paper!)</div>
+        </a><a href="/portfolio/Muse"><div class="portfolio_link svelte-1wqtmnu" data-title="Muse">Muse</div>
+        </a><a href="/portfolio/PaperSynth"><div class="portfolio_link svelte-1wqtmnu" data-title="PaperSynth">PaperSynth</div>
+        </a><a href="/portfolio/Slower"><div class="portfolio_link svelte-1wqtmnu" data-title="Slower">Slower</div>
+        </a><a href="/portfolio/ThreeVsTwo"><div class="portfolio_link svelte-1wqtmnu" data-title="Three Vs Two">Three Vs Two</div>
+        </a></div></div></div>
 
 
 
-			
+			<script type="application/json" data-type="svelte-data" data-url="/portfolio/portfolio.json">{"status":200,"statusText":"","headers":{"content-type":"text/plain;charset=UTF-8"},"body":"[{\"metadata\":{\"title\":\"Bioreactive Music\",\"Tech\":[\"Swift\",\"OSC\",\"Csound\",\"NodeJS\",\"Bluetooth\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FBioreactive\"},{\"metadata\":{\"title\":\"Jie\",\"layout\":\"portfolio_page\",\"Tech\":[\"Csound\",\"jQuery\",\"Nodejs\",\"Socket.io\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FJie\"},{\"metadata\":{\"title\":\"Keyo\",\"layout\":\"portfolio_page\",\"Tech\":[\"NodeJS\",\"Jade\",\"PostgreSQL\",\"PostGIS\",\"GraphQL\",\"Amazon EC2\u002FLambda\",\"Bootstrap\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FKeyo\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"Lidar Viewer\",\"Tech\":[\"Swift\",\"Metal\",\"Python\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FLidarViewer\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"LiveAds\",\"Tech\":[\"NodeJS\",\"PhantomJS\",\"GraphQL\",\"Swift\",\"ffmpeg\",\"WebSockets\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FLiveAds\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"Mind the Beat (ICASSP 2021 Paper!)\",\"Tech\":[\"Python\",\"Pytorch\",\"Madmom\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FMindTheBeat\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"Muse\",\"Tech\":[\"C++\",\"C\",\"OpenFrameworks\",\"Pure data\",\"Csound\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FMuse\"},{\"metadata\":{\"title\":\"PaperSynth\",\"layout\":\"portfolio_page\",\"Tech\":[\"Python\",\"Keras\",\"numpy\",\"Swift\",\"CoreML\",\"Vision\",\"AudioKit\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FPaperSynth\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"Slower\",\"Tech\":[\"Logic Pro\",\"EXS24\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FSlower\"},{\"metadata\":{\"layout\":\"portfolio_page\",\"title\":\"Three Vs Two\",\"Tech\":[\"Csound\"],\"date\":\"Dec 19, 2023\"},\"portfolioslug\":\"portfolio\u002FThreeVsTwo\"}]"}</script>
 		</div>
   </body>
 </html>
