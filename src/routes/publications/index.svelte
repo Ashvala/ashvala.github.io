@@ -8,7 +8,7 @@
     import { base } from "$app/paths";
     import Nav from "$lib/Nav.svelte";
     import { Col, Container, Row } from "sveltestrap";
-    import Pdf from "./pdf.svelte";
+    import Pdf from "../../lib/pdf.svelte";
     import publications from "./publications.json";
 </script>
 
