@@ -1,7 +1,7 @@
 <script>
     import Page from './page.md';
     function goBack() {
-    window.history.back();
+      window.location.href = "/";
   }
 </script>
   
@@ -17,13 +17,7 @@
   </main>
   
   <style>
-      /* main{ 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #ccc;        
-      } */
-      
+        
       .page {
           font-family: "Avenir";
           width: 210mm;
