@@ -1,7 +1,7 @@
 ---
 name: Ashvala Vinay
 mail: mail@ashvala.net
-homepage: https://ashvala.net
+homepage: https://ashva.la
 github: ashvala
 scholar: https://bit.ly/3HfZdVD
 bio: "I am a PhD student who spends time stradling the intersection of Music, Machine Learning and Audio Synthesis. Previously, I studied Electronic Production and Design at Berklee. I have worked at multiple startups in the Bay Area at their earliest stages and engineered their products. <br/><br/> Over the course of my journey, I have mastered a variety of tools and technologies that allow me to be an effective ML researcher and programmer. I enjoy working with teams and building new technologies with them."
@@ -14,7 +14,7 @@ import resume from "./resume.json";
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </svelte:head>
 
-<div class="container">
+<div class="cv_container">
 <div class="resume_header">
     <div class="title">
         <h1> {name} </h1>   
@@ -27,6 +27,7 @@ import resume from "./resume.json";
         <a href="{scholar}"> <i class="las la-graduation-cap"></i> {scholar} </a>    
         <br/>    
 
+<div class="svg_container">
 <svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="1pager" transform="translate(-505.000000, -82.000000)" fill="#0CA7DB" fill-rule="nonzero">
@@ -36,12 +37,16 @@ import resume from "./resume.json";
         </g>
     </g>
 </svg>
-    </div>
-
-    
 </div>
+    </div>
+</div>
+    
 
 
+
+
+
+<div class="box_container">
 
 ## Education 
 ---
@@ -49,7 +54,7 @@ import resume from "./resume.json";
 {#each resume.edu as edu}
     <div class="work_box">
         <div class="work_header">
-            <h3 class="work_title"> {edu.title}, {edu.school} ({edu.start} - {edu.end}) </h3>    
+            <h3 class="work_title"> {edu.title}, {edu.school} ({edu.end}) </h3>    
         </div>
         <div class="work_content">
             <p> {@html edu.description} </p>
@@ -57,7 +62,13 @@ import resume from "./resume.json";
     </div>
 {/each}
 
+</div>
 
+
+
+
+
+<div class="box_container">
 
 
 ## Work experience
@@ -66,13 +77,22 @@ import resume from "./resume.json";
 {#each resume.work as work}
     <div class="work_box">
         <div class="work_header">
-            <h3 class="work_title"> {work.title}, {work.company} ({work.start} - {work.end}) </h3> 
+            {#if work.start !== work.end}
+                <h3 class="work_title"> {work.title}, {work.company} ({work.start} - {work.end}) </h3> 
+            {:else}
+                <h3 class="work_title"> {work.title}, {work.company} ({work.start}) </h3>
+            {/if}
         </div>
         <div class="work_content">
             <p> {@html work.description} </p>
         </div>
     </div>
 {/each}
+</div>
+
+
+
+<div class="box_container">
 
 ## Teaching Experience
 ---
@@ -80,17 +100,20 @@ import resume from "./resume.json";
 {#each resume.teaching as teaching} 
     <div class="work_box">
         <div class="work_header">
-            <h3 class="work_title"> {teaching.title}, {teaching.company} ({teaching.start} - {teaching.end}) </h3>
+            <h3 class="work_title"> {teaching.title}, {teaching.company} ({teaching.start}) </h3>
         </div>
         <div class="work_content">
             <p> {@html teaching.description} </p>
         </div>
     </div>
 {/each}
-        
+</div>
 
 
-## Publications
+
+<div class="box_container">
+
+## Publications (Also at: [https://ashva.la/publications](https://ashva.la/publications))
 ---
 
 {#each resume.pubs as pub}
@@ -100,6 +123,10 @@ import resume from "./resume.json";
         </div>
     </div>
 {/each}
+</div>
+
+
+<div class="box_container">
 
 ## Academic Service 
 ---
@@ -113,6 +140,10 @@ import resume from "./resume.json";
         </div>
     </div>
 {/each}
+
+</div>
+
+<div class="box_container">
 
 ## Projects
 ---
@@ -131,6 +162,10 @@ import resume from "./resume.json";
     </div>
 {/each}
 
+</div>
+
+<div class="box_container">
+
 ## Awards
 ---
 
@@ -142,6 +177,10 @@ import resume from "./resume.json";
     </div>
 {/each}
 
+</div>
+
+
+<div class="box_container">
 
 ## Skills
 ---
@@ -154,15 +193,15 @@ import resume from "./resume.json";
         </div>
     </div>
 {/each}
+</div>
 
 </div>
 
+
 <style>
 
-.container{ 
-    margin: 0;
-    padding: 0;
-    font-family: "Avenir Next";
+.cv_container{ 
+    font-family: "Lusitana", "Palatino","Inter", "Avenir Next";
 }
 
 
@@ -171,7 +210,7 @@ import resume from "./resume.json";
     justify-content: space-between;        
     flex-direction: row;
     margin-bottom: 10px;
-    
+    align-items: center;
 }
 
 .title{
@@ -187,6 +226,8 @@ import resume from "./resume.json";
     display: flex;
     flex-direction: column;
     font-size: 8pt;
+    font-family: "Inter";
+
 }
 
 .urls a{
@@ -198,9 +239,10 @@ import resume from "./resume.json";
 
 
 h2{
-    color: #666;
-    margin-bottom:10px;
-    font-size:14pt;
+    color: #333;
+    margin-bottom:1em;
+    margin-top:1em;
+    font-size:18px;
     font-weight: 900;
 }
 
@@ -209,14 +251,15 @@ hr{
 }
 
 h3{
-    font-size: 10pt;
+    font-size: 16px;
     font-weight: 700;
 }
 
 p{
-    font-size: 10pt;
+    font-size: 14px;
     line-height: 1.5em;
     font-weight: 500;
+    /* font-family: "Baskervile"; */
 }
 
 .work_header{
@@ -242,22 +285,21 @@ p{
 }
 
 .work_box{ 
-    margin-bottom: 5px;
-    margin-top: 5px; 
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em; 
 }
 
-@media print{
-    .container{
-        max-width: 95%;
-        margin-left: 10mm;
-        margin-top: 2mm;
-        margin-bottom: 2mm; 
-        padding: 0px;
-    }
-    p{
-        font-size: 10pt;
-        line-height: 1.25em;
-        font-weight: 500;
-    }
+.box_container{ 
+    margin-bottom: 1em;
+    margin-top: 3em;
 }
+
+
+
+
+h2 a{
+    color: #333;
+}
+
 </style>

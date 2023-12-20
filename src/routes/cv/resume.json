@@ -4,21 +4,21 @@
 	"homepage": "https://ashva.la",	
 	"edu": [
         {
-			"title": "PhD, Music Technology (Machine Learning minor)",
+			"title": "PhD, Music Technology (with minor in Machine Learning)",
             "school": "Georgia Institute of Technology",
 			"start": "Aug 2020",
 			"end": "Mar 2024*",
-			"description": "Advised by Prof. Alexander Lerch. Dissertation work focuses on building evaluation metrics for neural audio synthesizers. The metrics focus on quality of audio synthesis and the measuring the ability of a synthesizer to morph between two sounds."
+			"description": "Advised by Prof. Alexander Lerch. Dissertation work focuses on building evaluation metrics for neural audio synthesizers. <br/> Relevant Coursework: Statistical Machine Learning, Human Computer Interaction"
 		},
 		{
 			"title": "Masters, Music Technology",
 			"school": "Georgia Institute of Technology",
 			"start": "Aug 2018",
 			"end": "May 2020",
-			"description": "Relevant Coursework: Deep Learning for Music, Mathematical Foundations of Machine learning, Statistical Machine Learning, Digital Signal Processing, Music Information Retireval, Interactive Music, Human Computer Interaction.<br/><br/> Won 2nd place at the Convergence in Innovation Competition."
+			"description": "Relevant Coursework: Deep Learning for Music, Mathematical Foundations of Machine learning, Digital Signal Processing, Music Information Retireval, Interactive Music, Music Perception and Cognition"
 		},
 		{
-			"title": "Bachelors, Music Technology",
+			"title": "Bachelors, Electronic Production and Design",
 			"school": "Berklee College of Music",
 			"start": "May 2013",
 			"end": "May 2016",
@@ -29,43 +29,43 @@
 		{
 			"title": "Graduate Research Assistant, Earsketch",
 			"company": "Georgia Institute of Technology",
-			"start": "Jan 2022",
-			"end": "August 2023",
+			"start": "2022",
+			"end": "2023",
 			"description": "• EarSketch is an educational platform that helps children learn programming through music. the sound recommendation engine and the UI.<br/>• Worked on the sound recommendation engine: augmented the existing engine with information about musical keys, rhythm and beats to make more musically driven suggestions.<br/>• Worked on the redesign to the sound browser, which was implemented in the summer of 2022."
 		},
 		{
 			"title": "Graduate Research Assistant, Brain Music Lab",
 			"company": "Georgia Institute of Technology",
-			"start": "Jan 2019",
-			"end": "Jan 2022",
+			"start": "2019",
+			"end": "2022",
 			"description": "• Worked with Prof. Grace Leslie on designing and developing frameworks for analysis  of multi-modal data with a specific focus on audio and physiological data from EEG and ECoG in addition to data from sensors such as the Leap Motion."
 		},
 		{
 			"title": "Research Intern",
 			"company": "Corohealth",
-			"start": "May 2021",
-			"end": "August 2021",
+			"start": "2021",
+			"end": "2021",
 			"description": "• Corohealth is a startup focused on healthcare through music therapy.<br/>• During my time there, I designed and built algorithms that allowed them to generate relevant playlists for a variety of purposes using their internal data.<br/>• I also built user interfaces that allowed them to explore their datasets."
 		},
 		{
 			"title": "Developer",
 			"company": "Keyo AI",
-			"start": "Feb 2017",
-			"end": "July 2017",
+			"start": "2017",
+			"end": "2017",
 			"description": "•Developed a property search engine for addresses in the United States.<br/>• Managed a database of 80 million records with data from the United States Census Bureau and public city data.<br/>• The stack was developed with JavaScript, Postgres, Jade and PostGIS.<br/>• Company acquired by Zillow in 2022"
 		},
 		{
 			"title": "Developer, Technical Co-Founder",
 			"company": "LiveAds Inc",
-			"start": "Nov 2016",
-			"end": "Feb 2017",
+			"start": "2016",
+			"end": "2017",
 			"description": "• Worked on Prompt, an intelligent teleprompter and streaming tool that was contextually aware of interests to aid in livestreaming.<br/>• Pivoted Prompt into Streamstager. Streamstager is a platform to create interactive overlays intended for use in livestreams on social media platforms.<br/>• Used by VISA in the Super Bowl streams they ran from Houston, Texas in 2017."
 		},
 		{
 			"title": "Developer",
 			"company": "Boulanger Labs",
-			"start": "Dec 2014",
-			"end": "July 2016",
+			"start": "2014",
+			"end": "2016",
 			"description": "• Muse is a Leap Motion exclusive ambient music generation app built on top of OpenFrameworks and Csound.<br/>• Designed in collaboration with Grammy nominated artist BT.<br/>• Inherited an existing codebase where I fixed bugs and optimized it.<br/>• In addition to fixes, helped create a Windows version using the macOS codebase."
 		}
 	],	

@@ -16,7 +16,7 @@
 
 <Styles />
 
-<div>
+<div class="nav">
   <nav>
     <h1><a href="/"> Ashvala Vinay </a></h1>
     <ul>
@@ -42,16 +42,15 @@
     width: 50%;
   }
   nav {
-    display: flex;
+    display: flex; 
     height: 64px;
-    /* font-family: "Avenir Next"; */
-    margin-top: 10px;
+    margin-top: 10px; 
     margin-bottom: 20px;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     border-bottom: 1px solid #afafaf;
-    /* background: #222; */
+    /* background: #222;  */
   }
 
   ul {
