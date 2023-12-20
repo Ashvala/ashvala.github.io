@@ -21,7 +21,7 @@
     <h1><a href="/"> Ashvala Vinay </a></h1>
     <ul>
       <li><a href="/blog"> Blog </a></li>
-      <!-- <li><a href="/portfolio"> Portfolio </a></li> -->
+      <li><a href="/cv"> CV </a></li>
       <li><a href="/publications"> Publications </a></li>
     </ul>
   </nav>

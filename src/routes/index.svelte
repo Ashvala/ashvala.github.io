@@ -10,6 +10,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css"
   />
+  <title> Ashvala Vinay </title>
 </svelte:head>
 
 <Styles />

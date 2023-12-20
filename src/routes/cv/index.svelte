@@ -1,8 +1,14 @@
 <script>
     import Page from './page.md';
-  </script>
+    function goBack() {
+    window.history.back();
+  }
+</script>
   
   <main>
+    <div class="backButton" on:click={goBack}>
+        <i class="las la-angle-left" />
+      </div>
     <div class="book">
         <div class="page">
             <Page/>            
@@ -39,5 +45,30 @@
               margin-top: 2px;
           }
       }
+      .backButton {
+    position: relative;
+    top: 32px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    color: black;
+    background: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .backButton i {
+    font-size: 1.2em;
+  }
+
+  .backButton:hover {
+    background: #aaa;
+    color: black;
+  }
   
   </style>
