@@ -7,6 +7,7 @@
     import { Styles } from "sveltestrap";
     import { base } from "$app/paths";
     import Nav from "$lib/Nav.svelte";
+    import Footer from "$lib/Footer.svelte";
     import { Col, Container, Row } from "sveltestrap";
     import Pdf from "../../lib/pdf.svelte";
     import publications from "./publications.json";
@@ -30,8 +31,10 @@
         </div>
       </Col>
     </Row>
+    <Footer />
   </Container>
 </div>
+
 
 <style> 
     .mainContainer {
@@ -54,6 +57,10 @@
     }
     .content{ 
       margin-top: 2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      
     }
 
 </style>

@@ -281,7 +281,7 @@ p{
 }
 
 .work_content p{ 
-    line-height: 1.25em;
+    line-height: 1.5em;
 }
 
 .work_box{ 
@@ -295,6 +295,9 @@ p{
     margin-top: 3em;
 }
 
+.svg_container{
+    display: none;
+}
 
 
 

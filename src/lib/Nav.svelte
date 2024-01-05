@@ -1,20 +1,8 @@
 <script>
   import { Styles } from "sveltestrap";
   import { base } from "$app/paths";
-  import {
-    Col,
-    Container,
-    Row,
-    Image,
-    Navbar,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-  } from "sveltestrap";
+  let showMenu = false;
 </script>
-
-<Styles />
 
 <div class="nav">
   <nav>

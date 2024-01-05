@@ -163,7 +163,7 @@ function queueRenderPage(num) {
 
 <div class="card_container"> 
     <Row>
-        <Col>
+        <Col xs="auto">
         <div class="pdf_holder"> 
             <canvas class="pdf_viewer" bind:this={canvas} > 
             </canvas>
@@ -180,7 +180,7 @@ function queueRenderPage(num) {
             </div>
         </div>
     </Col>
-    <Col>
+    <Col xs="auto">
         <div class="meta_holder"> 
             <h3> {meta.name} </h3>
             <p> {meta.authors} </p>
@@ -379,20 +379,25 @@ canvas {
     /* border-radius: 5px; */
 }
 
-
-
-
-/* if mobile, hide pdf viewer altogether and set the meta to full */
-
 @media only screen and (max-width: 600px) {
-    .pdf_holder { 
-        display: none;
-    }
+
     .meta_holder { 
-        width: 100%;
-        height: 100%;
-        margin-left: 0;
+      font-size: 0.75em;
     }
+
+    .left{
+        font-size: 0.5em;
+    }
+
+    .right{
+        font-size: 0.5em;
+    }
+
+    .middle{
+        font-size: 0.5em;
+    }
+
+    
 
 }
 

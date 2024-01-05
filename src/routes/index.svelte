@@ -3,6 +3,7 @@
   import { base } from "$app/paths";
   import { Col, Container, Row, Image } from "sveltestrap";
   import Nav from "$lib/Nav.svelte";
+  import Footer from "$lib/Footer.svelte";
   let social_urls = { "github": "https://github.com/ashvala", "twitter": "https://x.com/ashvala", "instagram": "https://instagram.com/ashvalav", "scholar": "https://scholar.google.com/citations?user=zsDPEzgAAAAJ&hl=en&oi=ao", "linkedin": "https://www.linkedin.com/in/ashvalavinay/"}
 
 </script>
@@ -38,14 +39,15 @@
           ground with their software engineering work. After that, I got my
           Masters in Music Technology at GTCMT.
         </p>
+        <p> 
+          I play in a live coding band with my good buddy, <a href="https://ijc8.me"> Ian Clester</a> called <a href="https://mergeconflict.live"> Merge Conflict </a>.
+        </p>
         <p>
           On this page, I will be sharing my work, and some posts where I will
           discuss music, technology and my progress through the course of my PhD
           work.
         </p>
-        <p> 
-          I play in a live coding band with my good buddy, <a href="https://ijc8.me"> Ian Clester</a> called <a href="https://mergeconflict.live"> Merge Conflict </a>.
-        </p>
+        
         <div class="socials"> 
           {#each Object.keys(social_urls) as social}
             <a href="{social_urls[social]}">
@@ -66,6 +68,9 @@
   </Row>
   <Row />
 </Container>
+
+
+<Footer />
 
 <style>
   :global(body) {
