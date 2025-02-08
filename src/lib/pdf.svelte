@@ -163,7 +163,7 @@ function queueRenderPage(num) {
 
 <div class="card_container"> 
     <Row>
-        <Col xs="auto">
+        <Col>
         <div class="pdf_holder"> 
             <canvas class="pdf_viewer" bind:this={canvas} > 
             </canvas>
@@ -180,7 +180,7 @@ function queueRenderPage(num) {
             </div>
         </div>
     </Col>
-    <Col xs="auto">
+    <Col>
         <div class="meta_holder"> 
             <h3> {meta.name} </h3>
             <p> {meta.authors} </p>

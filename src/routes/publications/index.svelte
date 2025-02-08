@@ -27,7 +27,6 @@
             <Pdf url="{base}/pdfs/{publication.url}" meta={publication} />
           </div>
           {/each}
-
         </div>
       </Col>
     </Row>

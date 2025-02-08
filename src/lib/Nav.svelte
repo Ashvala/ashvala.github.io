@@ -10,7 +10,7 @@
     <ul>
       <li><a href="/blog"> Blog </a></li>
       <li><a href="/cv"> CV </a></li>
-      <li><a href="/publications"> Publications </a></li>
+      <li><a href="/#publications"> Publications </a></li>
     </ul>
   </nav>
 </div>

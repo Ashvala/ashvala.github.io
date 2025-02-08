@@ -4,7 +4,7 @@ mail: mail@ashvala.net
 homepage: https://ashva.la
 github: ashvala
 scholar: https://bit.ly/3HfZdVD
-bio: "I am a PhD student who spends time stradling the intersection of Music, Machine Learning and Audio Synthesis. Previously, I studied Electronic Production and Design at Berklee. I have worked at multiple startups in the Bay Area at their earliest stages and engineered their products. <br/><br/> Over the course of my journey, I have mastered a variety of tools and technologies that allow me to be an effective ML researcher and programmer. I enjoy working with teams and building new technologies with them."
+bio: ""
 ---
 <script>
 import resume from "./resume.json";
@@ -17,15 +17,15 @@ import resume from "./resume.json";
 <div class="cv_container">
 <div class="resume_header">
     <div class="title">
-        <h1> {name} </h1>   
+        <h1> {name} </h1>
         <p> {@html bio} </p>
-    </div> 
+    </div>
     <div class="urls">
         <a href="mailto:{mail}"> <i class="las la-envelope"></i> {mail} </a>
         <a href="{homepage}"> <i class="las la-home">  </i> {homepage} </a>
         <a href="https://github.com/{github}">  <i class="lab la-github"></i> {github} </a>
-        <a href="{scholar}"> <i class="las la-graduation-cap"></i> {scholar} </a>    
-        <br/>    
+        <a href="{scholar}"> <i class="las la-graduation-cap"></i> {scholar} </a>
+        <br/>
 
 <div class="svg_container">
 <svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -40,7 +40,7 @@ import resume from "./resume.json";
 </div>
     </div>
 </div>
-    
+
 
 
 
@@ -48,13 +48,13 @@ import resume from "./resume.json";
 
 <div class="box_container">
 
-## Education 
+## Education
 ---
 
 {#each resume.edu as edu}
     <div class="work_box">
         <div class="work_header">
-            <h3 class="work_title"> {edu.title}, {edu.school} ({edu.end}) </h3>    
+            <h3 class="work_title"> {edu.title}, {edu.school} ({edu.end}) </h3>
         </div>
         <div class="work_content">
             <p> {@html edu.description} </p>
@@ -78,7 +78,7 @@ import resume from "./resume.json";
     <div class="work_box">
         <div class="work_header">
             {#if work.start !== work.end}
-                <h3 class="work_title"> {work.title}, {work.company} ({work.start} - {work.end}) </h3> 
+                <h3 class="work_title"> {work.title}, {work.company} ({work.start} - {work.end}) </h3>
             {:else}
                 <h3 class="work_title"> {work.title}, {work.company} ({work.start}) </h3>
             {/if}
@@ -97,7 +97,7 @@ import resume from "./resume.json";
 ## Teaching Experience
 ---
 
-{#each resume.teaching as teaching} 
+{#each resume.teaching as teaching}
     <div class="work_box">
         <div class="work_header">
             <h3 class="work_title"> {teaching.title}, {teaching.company} ({teaching.start}) </h3>
@@ -128,7 +128,7 @@ import resume from "./resume.json";
 
 <div class="box_container">
 
-## Academic Service 
+## Academic Service
 ---
 
 {#each resume.academic_service as acad}
@@ -152,7 +152,7 @@ import resume from "./resume.json";
     <div class="work_box">
         <div class="work_content">
             <h3 class="work_title"> {proj.name} </h3>
-            <p> {@html proj.description} 
+            <p> {@html proj.description}
             {#if proj.url}
                 <br/>
                 • <a href="{proj.url}"> Code available on Github </a>
@@ -200,14 +200,14 @@ import resume from "./resume.json";
 
 <style>
 
-.cv_container{ 
+.cv_container{
     font-family: "Lusitana", "Palatino","Inter", "Avenir Next";
 }
 
 
 .resume_header{
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;
     flex-direction: row;
     margin-bottom: 10px;
     align-items: center;
@@ -264,33 +264,33 @@ p{
 
 .work_header{
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;
     flex-direction: row;
-    margin-top: 5px; 
-    margin-bottom: 5px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-items: center;
     page-break-inside: avoid;
 }
 
-.work_title{ 
+.work_title{
     max-width: 100%;
 }
 
 .work_content{
-    font-size: 10pt;    
+    font-size: 10pt;
 }
 
-.work_content p{ 
+.work_content p{
     line-height: 1.5em;
 }
 
-.work_box{ 
+.work_box{
     width: 100%;
     margin-bottom: 1em;
-    margin-top: 1em; 
+    margin-top: 1em;
 }
 
-.box_container{ 
+.box_container{
     margin-bottom: 1em;
     margin-top: 3em;
 }
